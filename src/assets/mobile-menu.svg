@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="109px" height="70px" viewBox="0 0 109 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0.0-HOME-Copy-14" transform="translate(-266.000000, 0.000000)">
+            <g id="Group-5-Copy">
+                <g id="Group-14" transform="translate(266.000000, 0.000000)">
+                    <path d="M18.9033776,3.8381783 C19.5090254,1.71841096 21.7979208,0 23.9970451,0 L109,0 L109,70 L0,70 L18.9033776,3.8381783 Z" id="Rectangle-Copy" fill="#FFFFFF" transform="translate(54.500000, 35.000000) scale(1, -1) translate(-54.500000, -35.000000) "></path>
+                    <g id="Group" transform="translate(47.000000, 26.000000)" fill="#1E2C36">
+                        <rect id="Rectangle-path" x="0" y="0" width="28" height="2"></rect>
+                        <rect id="Rectangle-path" x="0" y="8" width="28" height="2"></rect>
+                        <rect id="Rectangle-path" x="0" y="16" width="28" height="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
