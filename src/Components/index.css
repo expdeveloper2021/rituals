@@ -1,6 +1,6 @@
 .header-main {
     width: 100%;
-    background-color: black;
+    background-color: #1a1919;
 }
 
 .header-top {
@@ -54,11 +54,12 @@
     width: 100%;
     display: flex;
     height: 70px;
+    justify-content: space-between;
 }
 
 .header-bottom .lists-hb, .header-bottom .heading-hb, .header-bottom .right-hb {
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     align-items: center;
     background-color: #1a1919;
 }
@@ -67,8 +68,15 @@
     justify-content: flex-start;
 }
 
+.lists-hb .navbar-toggler .MuiSvgIcon-root {
+    height: 30px;
+    width: 30px;
+}
+
 .heading-hb {
+    align-items: center;
     justify-content: center;
+    align-content: center;
 }
 
 .right-hb {
@@ -85,7 +93,7 @@
     .header-bottom {
         height: 60px;
     }
-    .inut-rhbn input { 
+    .inut-rhbn input {
         display: none !important;
     }
     .right-hb span {
@@ -99,6 +107,10 @@
     .heading-hb {
         flex: 1 !important;
         justify-content: flex-start;
+        padding-left: 10px !important;
+    }
+    .header-main .inner-wrapper {
+        padding: 0px !important;
     }
 }
 
@@ -118,17 +130,11 @@
         display: flex;
         align-items: center;
     }
-}
-
-@media (max-width: 767px) {
     .header1.headeractive {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
     }
-}
-
-@media (max-width: 767px) {
     .header1 .navbar {
         padding: 0;
         width: 100%;
@@ -191,7 +197,7 @@
 }
 
 .navbar-toggler {
-    position: fixed;
+    /* position: fixed; */
     z-index: 1042;
     padding: 0;
     right: auto;
