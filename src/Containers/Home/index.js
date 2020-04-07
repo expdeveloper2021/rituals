@@ -3,6 +3,7 @@ import SlowMotionVideoIcon from '@material-ui/icons/SlowMotionVideo';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import './index.css'
+import Navbar from '../../Components/Navbar';
 
 AOS.init();
 
@@ -28,6 +29,7 @@ export class Home extends Component {
     render() {
         return (
             <div>
+                <Navbar />
                 <div className="bg-main-firsth">
                     <div
                         className="full-bg-hf"

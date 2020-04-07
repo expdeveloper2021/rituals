@@ -1,13 +1,9 @@
 import React from 'react';
-import Navbar from './Components/Navbar';
-import Home from './Containers/Home';
+import Routes from './Config/Routes';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Home />
-    </div>
+    <Routes />
   );
 }
 
