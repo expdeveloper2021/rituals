@@ -29,12 +29,12 @@
 
 .menu-ssb {
     width: 100%;
-    background-color: #f8f8f8;
     padding: 0px 10px;
 }
 
 .menu-ssb ul {
     padding: 0px 10px;
+    background-color: #f8f8f8;
 }
 
 .menu-ssb ul li {
@@ -179,10 +179,16 @@
     .card-bimage img {
         width: 20%;
     }
+    .menu-ssb ul {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .menu-ssb ul::-webkit-scrollbar {
+        display: none;
+    }
     .menu-ssb ul li {
         font-size: 12px;
         margin: 0px 8px;
-        line-height: 36px;
     }
 }
 
@@ -190,8 +196,5 @@
     .card-bbath {
         width: 100% !important;
         margin: 10px 0px;
-    }
-    .menu-ssb ul li {
-        width: 100%;
     }
 }
