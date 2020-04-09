@@ -50,7 +50,7 @@ export class BathBody extends Component {
                             </ul>
                         </div>
                         <div className="second-card-bath">
-                            <div className="card-bbath">
+                            <div className="card-bbath" data-aos="fade-in">
                                 <div className="card-bimage">
                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                 </div>
@@ -62,7 +62,7 @@ export class BathBody extends Component {
                                     <button>IN WINKELMAND</button>
                                 </div>
                             </div>
-                            <div className="card-bbath">
+                            <div className="card-bbath" data-aos="fade-in">
                                 <div className="card-bimage">
                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dwc7b584cb/images/grid/1106875_TheRitualofJingFoamingShowerGelPROgrid.png?sw=100&q=100" />
                                 </div>
@@ -74,7 +74,7 @@ export class BathBody extends Component {
                                     <button>IN WINKELMAND</button>
                                 </div>
                             </div>
-                            <div className="card-bbath">
+                            <div className="card-bbath" data-aos="fade-in">
                                 <div className="card-bimage">
                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw4ee4afa1/images/grid/1103953_TheRitualofKarmaFoamingShowergel200mlPROgrid.png?sw=100&q=100" />
                                 </div>
@@ -86,7 +86,7 @@ export class BathBody extends Component {
                                     <button>IN WINKELMAND</button>
                                 </div>
                             </div>
-                            <div className="card-bbath">
+                            <div className="card-bbath" data-aos="fade-in">
                                 <div className="card-bimage">
                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                 </div>
@@ -98,7 +98,7 @@ export class BathBody extends Component {
                                     <button>IN WINKELMAND</button>
                                 </div>
                             </div>
-                            <div className="card-bbath">
+                            <div className="card-bbath" data-aos="fade-in">
                                 <div className="card-bimage">
                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                 </div>
@@ -110,7 +110,7 @@ export class BathBody extends Component {
                                     <button>IN WINKELMAND</button>
                                 </div>
                             </div>
-                            <div className="card-bbath">
+                            <div className="card-bbath" data-aos="fade-in">
                                 <div className="card-bimage">
                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                 </div>
@@ -122,7 +122,7 @@ export class BathBody extends Component {
                                     <button>IN WINKELMAND</button>
                                 </div>
                             </div>
-                            <div className="card-bbath">
+                            <div className="card-bbath" data-aos="fade-in">
                                 <div className="card-bimage">
                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                 </div>
@@ -134,7 +134,7 @@ export class BathBody extends Component {
                                     <button>IN WINKELMAND</button>
                                 </div>
                             </div>
-                            <div className="card-bbath">
+                            <div className="card-bbath" data-aos="fade-in">
                                 <div className="card-bimage">
                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                 </div>

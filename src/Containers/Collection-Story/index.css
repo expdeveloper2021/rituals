@@ -1,0 +1,545 @@
+.full-bg-hcs {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    transition: all 1.3s cubic-bezier(.18, .74, .36, .99);
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .full-bg-hcs {
+        height: 70vh;
+        background-position: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    .full-bg-hcs {
+        height: 600px;
+    }
+}
+
+span.the-ritual-title {
+    font-size: 18px;
+    letter-spacing: 4.5px;
+    line-height: 30px;
+}
+
+h1.cs-heading {
+    font-size: 37px;
+    letter-spacing: 9px;
+    line-height: 43px;
+    margin-bottom: 7px;
+}
+
+.full-bg-hcs h2 {
+    font-family: "Roboto";
+    font-size: 12px;
+    text-transform: uppercase;
+    max-width: 320px;
+    margin: 0px auto 41px;
+    color: white;
+    line-height: 20px;
+    letter-spacing: 2.45px;
+    text-align: center;
+}
+
+.full-bg-hcs button {
+    min-width: 220px;
+    max-width: 280px;
+    margin: 0px auto;
+    background-color: #1a1919;
+    color: white;
+    border: 1px solid #1a1919;
+    font-size: 12px;
+    font-family: "Roboto";
+    line-height: 1.2px;
+    letter-spacing: 2px;
+    padding: 20px;
+    text-align: center;
+}
+
+.full-bg-hcs button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+@media (min-width: 768px) {
+    span.the-ritual-title {
+        font-size: 30px;
+        letter-spacing: 8px;
+        line-height: 40px;
+        margin-bottom: 12px;
+    }
+    h1.cs-heading {
+        line-height: 58px;
+        font-size: 54px;
+        margin: 0px 0px 22px;
+    }
+    .full-bg-hcs h2 {
+        font-size: 16px;
+        letter-spacing: 5px;
+        line-height: 25px;
+        margin: 0px auto 35px;
+        max-width: none;
+    }
+}
+
+/* Second Section */
+
+.second-sec-cs {
+    width: 100%;
+    background-color: white;
+    padding: 30px 20px;
+}
+
+.second-sec-cs p {
+    font-size: 24px;
+    letter-spacing: .6px;
+    line-height: 44px;
+    text-align: center;
+    color: #1a1919;
+}
+
+.second-sec-cs .inner-wrapper {
+    text-align: center;
+}
+
+.second-sec-cs button {
+    min-width: 220px;
+    max-width: 280px;
+    margin: 0px auto;
+    background-color: transparent;
+    border: 1px solid gray;
+    font-size: 12px;
+    font-family: "Roboto";
+    line-height: 1.2px;
+    letter-spacing: 2px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.second-sec-cs button:hover {
+    border: 1px solid black;
+}
+
+.fixed-div {
+    position: fixed;
+    width: 40px;
+    height: 130px;
+    background-color: black;
+    bottom: 50%;
+    top: 40%;
+    right: 0px;
+    padding-right: 20px;
+}
+
+.fixed-div img {
+    width: 40px;
+    height: 130px;
+}
+
+.last-sec-cs {
+    width: 100%;
+    background-color: #FBF3F4;
+    padding: 40px 0px;
+}
+
+.first-content-last-cs {
+    text-align: center;
+}
+
+.first-content-last-cs h4 {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 12px;
+    line-height: 18px;
+    letter-spacing: 2.4px;
+    text-align: center;
+}
+
+.first-content-last-cs h2 {
+    color: #1a1919;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    line-height: 40px;
+    margin-bottom: 23px;
+    text-transform: none;
+    text-align: center;
+}
+
+.read-time {
+    display: none;
+}
+
+.first-content-last-cs p {
+    display: none;
+}
+
+.second-content-last-cs {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+}
+
+.img-secc-last-cs, .content-secc-last-cs {
+    width: 50%;
+    height: 848px;
+}
+
+.img-secc-last-cs {
+    background-size: cover;
+    background-position: center;
+}
+
+.content-secc-last-cs {
+    display: flex;
+    align-items: center;
+}
+
+.content-secc-last-cs .slider-inner-wrap {
+    text-align: center;
+}
+
+.content-secc-last-cs h3 {
+    color: black;
+    font-size: 22px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+
+.content-secc-last-cs .slider-inner-wrap p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: "Roboto";
+    color: #453f3f;
+}
+
+.content-secc-last-cs .read-time {
+    display: block;
+    margin-bottom: 7px;
+    letter-spacing: 1.6px;
+    font-family: "Roboto";
+    color: #454545;
+}
+
+.card-cslc {
+    width: 100%;
+}
+
+.card-cs-img {
+    width: 100%;
+    margin: 0px !important;
+}
+
+.card-cs-img img {
+    max-width: 100%;
+}
+
+.content-cslc {
+    padding: 20px;
+}
+
+.content-cslc h1 {
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 23px;
+    margin-bottom: 11px;
+}
+
+.content-cslc p {
+    color: black !important;
+    line-height: 10px !important;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif !important;
+    margin: 15px 0px;
+}
+
+.content-cslc button, .igt-centered button {
+    padding: 12px 30px;
+    outline: none;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: white;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    transition: .2s ease-in-out;
+    margin-top: 13px;
+}
+
+.content-cslc button:hover, .igt-centered button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.third-content-last-cs {
+    width: 100%;
+    margin-top: 40px;
+    padding: 60px 17px 5px;
+}
+
+.third-content-last-cs .inner-wrapper {
+    margin-bottom: 50px;
+}
+
+.third-content-last-cs .inner-wrapper h2 {
+    color: black;
+    font-size: 15px;
+    letter-spacing: 5px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.third-content-last-cs .inner-wrapper p {
+    font-size: 18px;
+    letter-spacing: .6px;
+    line-height: 30px;
+    text-align: center;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    color: #453f3f;
+}
+
+.grid-system-tcls {
+    width: 100%;
+    display: flex;
+}
+
+.first-gstc, .second-gstc, .second-gst {
+    width: 50%;
+}
+
+.inner-grid-text h3 {
+    color: black;
+    font-size: 15px;
+    letter-spacing: 5px;
+    line-height: 23px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+
+.inner-grid-text p {
+    font-size: 18px;
+    letter-spacing: .6px;
+    line-height: 30px;
+}
+
+.second-gstc {
+    background-color: white;
+}
+
+.first-gstc .inner-grid img, .second-gstc .inner-grid img {
+    width: 100%;
+}
+
+.igt-centered h2 {
+    color: black;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: none;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.igt-centered h1 {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 2.63px;
+    pointer-events: none;
+}
+
+.igt-centered {
+    text-align: center;
+}
+
+.igt-centered p {
+    text-align: center;
+    font-family: "Roboto";
+    color: #453f3f;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.igt-centered .read-time {
+    letter-spacing: 0px;
+    font-size: 18px;
+}
+
+.second-gst {
+    padding: 20px 0px;
+}
+
+.price-igt {
+    font-size: 30px;
+    letter-spacing: 2.5px;
+}
+
+.shop-sec-last {
+    margin-top: 60px;
+}
+
+.shop-sec-last h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 30px;
+    letter-spacing: 8px;
+    line-height: 40px;
+    color: #1a1919;
+}
+
+@media (max-width: 767px) {
+    .second-sec-cs p {
+        font-size: 20px;
+        letter-spacing: .56px;
+        line-height: 30px;
+    }
+    .img-secc-last-cs {
+        display: none;
+    }
+    .content-secc-last-cs {
+        width: 100%;
+        height: auto;
+        padding: 0px 10px;
+    }
+    .card-cslc {
+        background-color: white;
+    }
+    .grid-system-tcls {
+        flex-direction: column;
+    }
+    .first-gstc, .second-gstc, .second-gst {
+        width: 100%;
+        min-height: 250px;
+        padding-bottom: 30px;
+    }
+    .third-content-last-cs {
+        padding: 10px 0px;
+    }
+    .igt-centered p {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .second-gst {
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .second-sec-cs .inner-wrapper {
+        padding: 0px 60px;
+    }
+    .second-sec-cs {
+        padding: 37px 60px !important;
+    }
+    .second-sec-cs p {
+        max-width: 980px;
+        margin: 20px auto;
+    }
+    .first-content-last-cs h4 {
+        font-size: 15px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+    .first-content-last-cs h2 {
+        font-size: 40px;
+        letter-spacing: 1.6px;
+        line-height: 50px;
+        margin-bottom: 17px;
+    }
+    .read-time {
+        color: black;
+        display: inline-block;
+        font-size: 15px;
+        letter-spacing: 5px;
+        line-height: 23px;
+        margin-bottom: 24px;
+        padding-left: 20px;
+        text-transform: uppercase;
+    }
+    .first-content-last-cs p {
+        display: block;
+        line-height: 28px;
+        margin: 0px auto;
+        max-width: 500px;
+        font-size: 16px;
+        font-family: "Roboto";
+        color: #454f3f;
+        letter-spacing: 0.5px;
+    }
+    .content-secc-last-cs {
+        max-width: 720px;
+    }
+    .content-secc-last-cs .slider-inner-wrap {
+        max-width: 570px;
+        margin: 0px auto;
+        padding: 0px 20px;
+        text-align: center;
+    }
+    .content-secc-last-cs h3 {
+        font-size: 30px;
+        letter-spacing: 8px;
+        line-height: 50px;
+        display: inline-block;
+        margin-bottom: 22px;
+    }
+    .card-cs-img img {
+        max-width: 260px;
+    }
+    .third-content-last-cs {
+        padding: 101px 0px 38px;
+    }
+    .third-content-last-cs .inner-wrapper h2 {
+        margin-bottom: 13px;
+    }
+    .first-gstc, .second-gstc {
+        padding-top: 65px;
+    }
+    .inner-grid, .inner-grid-text {
+        width: 100%;
+        max-width: 720px;
+    }
+    .inner-grid-text {
+        padding: 0px 20px;
+    }
+    .igt-centered {
+        max-width: 490px;
+        padding: 0px 20px;
+        margin: 0px auto;
+    }
+    .igt-centered p {
+        margin-bottom: 30px;
+    }
+    .first-gstc .inner-grid, .first-gstc .inner-grid-text {
+        float: right;
+    }
+    .second-gstc .inner-grid, .second-gstc .inner-grid-text, .second-gst .inner-grid-text {
+        float: left;
+    }
+    .inner-grid img {
+        max-width: 520px;
+        width: 100%;
+    }
+    .igt-centered h2 {
+        font-size: 40px;
+        margin-bottom: 14px;
+        letter-spacing: 1.6px;
+        line-height: 50px;
+    }
+    .igt-centered h1 {
+        margin-bottom: 18px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .second-gst {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+    }
+}
