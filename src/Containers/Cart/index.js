@@ -12,6 +12,7 @@ export class Cart extends Component {
                 <div className="cart-main">
                     <div className="inner-wrapper">
                         <div className="inner-wrapper-small">
+                            {/* layout left */}
                             <div className="page-layout-left">
                                 <div className="cart-header">
                                     <h1>My shopping cart</h1>
@@ -113,6 +114,12 @@ export class Cart extends Component {
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <div className="giftwrap-block">
+                                        <div className="giftwrap-block-toggle">
+                                            <input type="checkbox" value="gift" name="giftwrap" checked />
+                                            <label htmlFor="giftwrap">Add gift wrapping / personal message</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             {/* Layout Right */}
@@ -242,7 +249,31 @@ export class Cart extends Component {
                                     </p>
                                 </div>
                             </div>
+                            {/* Layout Right End */}
                         </div>
+                    </div>
+                </div>
+                <div className="sticky-footer-cart">
+                    <div className="sticky-order-container">
+                        <div className="details-container">
+                            <span style={{ marginRight: 7 }}>2</span>
+                            <span>PRODUCTS</span>
+                        </div>
+                        <div className="price-container">
+                            <div style={{ display: "flex", alignItems: "center", marginleft: 10 }} >
+                                <div className="order-total-label">
+                                    <span>Total</span>
+                                </div>
+                                <div className="order-total-amount">
+                                    <span>
+                                        € 19.90
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="sticky-button-container">
+                        <span>Continue to Checkout</span>
                     </div>
                 </div>
             </div>
