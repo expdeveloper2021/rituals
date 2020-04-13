@@ -1,6 +1,7 @@
 .cart-main {
     width: 100%;
     padding: 32px 0px 70px;
+    margin-bottom: 300px;
 }
 
 .inner-wrapper-small {
@@ -12,7 +13,6 @@
 .page-layout-left {
     position: relative;
     text-align: center;
-    /* border: 1px solid black; */
 }
 
 .cart-header {
@@ -57,13 +57,6 @@
     position: relative;
     padding: 11px 0px 30px;
 }
-
-/* .cp-head {
-    font-size: 0px;
-    font-weight: 400;
-    line-height: 1;
-    text-align: left;
-} */
 
 .cp-sec-head {
     color: #1a1919;
@@ -307,10 +300,6 @@
     background-color: #865;
     border-color: #865;
 }
-
-/* .page-layout-right {
-    border: 1px solid black;
-} */
 
 .cs-service-block {
     margin-bottom: 64px;

@@ -1,0 +1,113 @@
+.account-main {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.account-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 44px 0px 113px;
+}
+
+.account-title {
+    border-bottom: 1px solid #d8d8d8;
+    font-size: 24px;
+    letter-spacing: 6px;
+    line-height: 30px;
+    padding: 0px 0px 46px 60px;
+    position: relative;
+    color: #453f3f;
+}
+
+.account-title-mobile {
+    display: none;
+}
+
+.icon-user {
+    position: absolute;
+    left: -3px;
+    line-height: 1px;
+}
+
+.account-left-content, .account-right-content {
+    width: 100%;
+}
+
+.account-menu-wrap {
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 3px 0px 12px;
+}
+
+.account-menu {
+    list-style: none;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.account-menu li {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.account-menu li a {
+    color: #626262;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 19px;
+    padding: 10px 0px 10px 45px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+}
+
+@media (min-width: 768px) {
+    .account-wrapper {
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+    .account-title {
+        border-bottom: 0px;
+        cursor: pointer;
+        font-size: 30px;
+        letter-spacing: 8px;
+        line-height: 40px;
+        margin-bottom: 0px;
+        padding: 0px 0px 39px 70px;
+        width: 100%;
+    }
+    .account-title-mobile {
+        display: block;
+    }
+    .icon-user {
+        top: -5px;
+    }
+    .account-left-content {
+        width: 31.6%;
+    }
+    .account-left-content .account-title {
+        display: none;
+    }
+    .account-right-content {
+        margin-left: auto;
+        padding-top: 44px;
+        width: 66%;
+        border-top: 1px solid #d8d8d8;
+    }
+    .account-menu-wrap {
+        border-top: 1px solid #d8d8d8;
+        margin-bottom: 40px;
+        padding: 33px 0px 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .account-wrapper {
+        flex-direction: column;
+    }
+}
