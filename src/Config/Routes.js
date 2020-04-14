@@ -6,6 +6,7 @@ import CollectionStory from '../Containers/Collection-Story'
 import FoamingShower from '../Containers/Foaming-Shower'
 import Cart from '../Containers/Cart'
 import Account from '../Containers/Account'
+import EditProfile from '../Containers/Edit Profile'
 
 const CreateBrowserHistory = require("history").createBrowserHistory
 const history = CreateBrowserHistory()
@@ -20,6 +21,7 @@ export class Routes extends Component {
                 <Route path="/foaming-shower" component={FoamingShower} />
                 <Route path="/cart" component={Cart} />
                 <Route path="/account" component={Account} />
+                <Route path="/account-edit-profile" component={EditProfile} />
             </Router>
         )
     }

@@ -64,6 +64,11 @@
     position: relative;
     text-decoration: none;
     text-transform: none;
+    cursor: pointer;
+}
+
+.account-menu li a:hover {
+    color: #856;
 }
 
 /* Content Right */

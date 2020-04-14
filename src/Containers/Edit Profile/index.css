@@ -1,0 +1,129 @@
+.create-account-wrapper {
+    padding: 0px;
+    background-image: none;
+}
+
+.ca-inner-wrapper {
+    max-width: 1180px;
+}
+
+.ca-container {
+    display: block;
+}
+
+.ca-content {
+    width: 100%;
+    padding: 0px;
+    flex: 1;
+}
+
+.personal-details-container {
+    width: 100%;
+}
+
+.section-title h2 {
+    font-size: 16px;
+    letter-spacing: 2.6px;
+    line-height: 16px;
+    margin-bottom: 0px;
+}
+
+.form-row {
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+.field-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.field-wrapper label {
+    color: #1a1919;
+    line-height: 20px;
+    letter-spacing: .5px;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    width: 100%;
+    font-size: 13px;
+    margin: 0px;
+}
+
+.field-wrapper input.read-only {
+    background: 0 0;
+    border: transparent;
+    cursor: not-allowed;
+    font-weight: 700;
+    padding: 12px 0px;
+    margin-top: -8px;
+    outline: none;
+}
+
+.field-wrapper input, .field-wrapper select, .field-wrapper select option {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    border: 1px solid #d8d8d8;
+    border-radius: 2px;
+    color: #1a1919;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: .5px;
+    font-size: 14px;
+    margin-top: 6px;
+    padding: 12px 21px;
+}
+
+.password-reveal {
+    position: absolute;
+    bottom: 12px;
+    right: 18px;
+    background: transparent;
+    border: none;
+    outline: none !important;
+}
+
+.form-row-button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form-row-button button {
+    background-color: #1a1919;
+    border: 1px solid #1a1919;
+    color: white;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    min-width: 220px;
+    padding: 14px 20px;
+}
+
+@media (min-width: 768px) {
+    .ca-inner-wrapper {
+        padding: 0px 20px;
+    }
+    .ca-content {
+        margin-right: 70px;
+        padding: 0px;
+    }
+    .personal-details-container {
+        margin-left: 23px;
+    }
+    .personal-details-container .section-title {
+        margin-left: -47px;
+    }
+    .form-row-button {
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (min-width: 1024) {
+    .ca-content {
+        margin-right: 130px;
+    }
+}
