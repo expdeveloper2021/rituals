@@ -49,7 +49,32 @@ export class Account extends Component {
                             </div>
                         </div>
                         <div className="account-right-content">
-
+                            <div className="dashboard-row">
+                                <section className="personal-details">
+                                    <div className="section-title">
+                                        <span>
+                                            <EventNoteIcon style={{ position: "absolute", transform: "translateY(-50%)", top: "50%", left: 2 }} />
+                                        </span>
+                                        <span>My Details</span>
+                                    </div>
+                                    <div className="block-inner-wrapper">
+                                        <span>Maurice Reijersen</span>
+                                        <span>maurice@blaiz.nl</span>
+                                        <span>15-02-1981</span>
+                                    </div>
+                                </section>
+                                <section className="address-book">
+                                    <div className="section-title">
+                                        <span>
+                                            <LocationCityIcon style={{ position: "absolute", transform: "translateY(-50%)", top: "50%", left: 2 }} />
+                                        </span>
+                                        <span>Billing Address</span>
+                                    </div>
+                                    <div className="block-inner-wrapper">
+                                        <a>ADD ADDRESS</a>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
                     </div>
                 </div>

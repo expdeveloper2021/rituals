@@ -66,6 +66,52 @@
     text-transform: none;
 }
 
+/* Content Right */
+
+.account-right-content .dashboard-row {
+    width: 100%;
+}
+
+.personal-details {
+    margin-bottom: 85px;
+}
+
+.address-book {
+    margin-bottom: 70px;
+}
+
+.account-right-content .section-title {
+    color: #1a1919;
+    font-size: 16px;
+    letter-spacing: 2.6px;
+    line-height: 1;
+    margin-bottom: 22px;
+    padding-left: 44px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.personal-details .block-inner-wrapper span {
+    color: #453f3f;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.address-book .block-inner-wrapper a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #865;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     .account-wrapper {
         flex-wrap: wrap;
@@ -103,6 +149,17 @@
         border-top: 1px solid #d8d8d8;
         margin-bottom: 40px;
         padding: 33px 0px 32px;
+    }
+    .personal-details, .address-book {
+        width: 50%;
+        float: left;
+    }
+    .account-right-content .section-title {
+        margin-bottom: 26px;
+        padding-left: 47px;
+    }
+    .account-right-content .block-inner-wrapper {
+        padding-left: 47px;
     }
 }
 
