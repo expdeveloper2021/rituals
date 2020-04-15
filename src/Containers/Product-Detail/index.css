@@ -1,0 +1,329 @@
+.pd-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 30px 15px;
+}
+
+.first-section-pd {
+    width: 100%;
+}
+
+.product-img, .product-detail {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img img {
+    max-width: 300px;
+}
+
+.pd-content {
+    width: 100%;
+    max-width: 520px;
+}
+
+.product-tile-pdc {
+    text-align: center;
+}
+
+.product-tile-pdc .rituals-icon {
+    color: #9a7b69;
+    font-size: 25px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.product-name-pt {
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 40px;
+    color: black;
+    text-transform: none;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+}
+
+.product-name-pt span {
+    font-size: 15px;
+    display: block;
+    line-height: 23px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.product-content-pt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-short-info {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: .36px;
+    color: #453f3f;
+    margin-bottom: 27px;
+    font-family: "Roboto";
+    font-weight: 700 !important;
+}
+
+.product-content-pt .long-description {
+    margin-bottom: 30px;
+    line-height: 28px;
+    width: 100%;
+    max-width: 380px;
+    font-family: "Roboto";
+    font-size: 17px;
+    text-align: center;
+}
+
+.promotion-wrapper {
+    margin-bottom: 17px;
+}
+
+.promotion-wrapper .callout-message {
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    line-height: 20px;
+    background-color: #eeeae7;
+    color: #1a1919;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 6px 15px;
+    font-family: "Roboto";
+}
+
+.product-content-pt .product-price {
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 2.5px;
+    color: black;
+    font-style: normal;
+    line-height: normal;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.add-to-cart button {
+    color: white;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid #1a1919;
+    background-color: #1a1919;
+    font-family: "Roboto";
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1.2px;
+    padding: 20px;
+    min-width: 220px;
+    max-width: 280px;
+    transition: .2s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.add-to-cart button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.shipping-info {
+    margin-top: 33px;
+}
+
+.shipping-info ul {
+    list-style: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.shipping-info ul li {
+    display: block;
+    margin-bottom: -1px;
+    max-width: 400px;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: .36px;
+    color: #453f3f;
+    font-family: "Roboto";
+}
+
+.shipping-info ul li span.icon-check {
+    margin-right: 10px;
+    vertical-align: top;
+    width: 15px;
+    line-height: 20px;
+}
+
+.shipping-info ul li span {
+    display: inline-block;
+    width: calc(100% - 25px);
+}
+
+.shipping-info ul li span a {
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    color: #865;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.second-sec-pd {
+    width: 100%;
+}
+
+.second-sec-pd .product-img {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.second-sec-pd .product-detail {
+    background-color: #227563;
+    padding: 20px 30px 26px;
+    transition: all .3s ease;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.second-sec-pd .wrapper-product {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+.second-sec-pd .product-detail .product-item {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    display: none;
+    padding-top: 32px;
+    text-align: left;
+}
+
+.second-sec-pd .product-detail .product-item:first-child {
+    border-top: 0px;
+    display: block;
+    margin: 0px 0px 13px;
+    padding-top: 0px;
+}
+
+.product-item p {
+    color: white;
+    font-size: 18px;
+    letter-spacing: .6px;
+    line-height: 30px;
+    margin-bottom: 14px;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+}
+
+.product-item h3 {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 5px;
+    line-height: 23px;
+    margin-bottom: 17px;
+}
+
+.product-detail .wrapper-product div button {
+    display: inline-block;
+    margin: 22px 0px 0px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: ScalaSansOT,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+    font-size: 12px;
+    padding: 14px 20px;
+    letter-spacing: 2px;
+    transition: .2s ease-in-out;
+}  
+
+.product-detail .wrapper-product div button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .pd-main {
+        position: relative;
+        padding: 20px;
+    }
+    .first-section-pd {
+        display: flex;
+    }
+    .product-img, .product-detail {
+        width: 50%;
+    }
+    .product-img img {
+        max-width: 400px;
+    }
+    .pd-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-tile-pdc .rituals-icon {
+        font-size: 35px;
+        margin-bottom: 16px;
+    }
+    .product-name-pt {
+        margin-bottom: 18px;
+        font-size: 40px;
+        letter-spacing: 1.6px;
+        line-height: 50px;
+    }
+    .promotion-wrapper {
+        margin-bottom: 22px;
+    }
+    .promotion-wrapper .callout-message {
+        padding: 6px 18px;
+    }
+    .shipping-info {
+        margin-top: 60px;
+    }
+    .second-sec-pd {
+        display: flex;
+    }
+    .second-sec-pd .product-detail {
+        padding: 80px 50px;
+    }
+    .second-sec-pd .product-detail .product-item {
+        display: block;
+        width: 100%;
+        padding-top: 51px;
+    }
+    .product-item p {
+        font-size: 21px;
+        letter-spacing: .4px;
+        line-height: 43px;
+        margin-bottom: 26px;
+    }
+    .product-item h3 {
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 14px;
+        margin-bottom: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .second-sec-pd .product-detail {
+        padding: 130px 90px 130px 150px;
+    }
+}
