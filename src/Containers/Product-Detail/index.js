@@ -91,6 +91,83 @@ export class ProductDetail extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="third-sec-pd">
+                    <div className="img-tsp">
+
+                    </div>
+                    <div className="content-tsp">
+                        <div className="content-tsp-box">
+                            <h3>Instructions</h3>
+                            <p>Use a small amount of gel. Enjoy the rich, soothing foam as soon as it comes in contact with water.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="product-tabs">
+                    <div className="fourth-sec-pd">
+                        <div className="tabs-holder">
+                            <div className="tabs-items-holder">
+                                <ul className="tabs">
+                                    <li>
+                                        <button className="selected">DESCRIPTION</button>
+                                    </li>
+                                    <li>
+                                        <button>INGREDIENTS</button>
+                                    </li>
+                                    <li>
+                                        <button>WARNING</button>
+                                    </li>
+                                    <li>
+                                        <button>INSTRUCTIONS</button>
+                                    </li>
+                                    <li>
+                                        <button>SHIPPING AND RETURNS</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="tabs-content">
+                                <div className="content-tc">
+                                    <font>Radiate positive vibes with The Ritual of Karma shower foam. The unique gel-to-foam technology of the rich and luxurious foam is enriched with the scent of sweet sacred lotus and nourishing organic white tea. Your skin becomes silky soft and smells great, so you can enjoy that unique summer feeling all day long. Complete your Karma cleansing ceremony with the body cream from the same collection.</font>
+                                </div>
+                                <div className="content-tc">
+                                    <font>Aqua / Water, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Isopentane, Sorbitol, PEG-120 Methyl Glucose Dioleate, Isopropyl Palmitate, Isobutane, Perfume / Fragrance, Sodium Benzoate, Camelia Sinensis Leaf (White Tea) Extract, Nelumbo Nucifera (Lotus) Flower Extract , Citric Acid, PEG-40 Hydrogenated Castor Oil, Guar Hydroxypropyltrimonium Chloride, Benzyl Salicylate, Butylphenyl Methylpropional, Limonene, Linalool, Hexyl Cinnamal, Citronellol, Alpha-Isomethyl Ionone, Citral, Glycerin.</font>
+                                </div>
+                                <div className="content-tc">
+                                    <font>WARNING: PRESSURE HOLDER. CONTENTS UNDER PRESSURE. AVOID CONTACT WITH EYES. IF IN EYES, RINSE IMMEDIATELY FOR AT LEAST 5 MINUTES WITH WATER AND SEEK EXPERT MEDICAL ADVICE. DO NOT DRILL OR BURN EVEN AFTER USE. PROTECT FROM THE SUN AND DO NOT EXPOSE TO TEMPERATURES HIGHER THAN 50 ° C. DO NOT SPRAY IN THE DIRECTION OF A FLAME OR A GLOWING OBJECT. DO NOT SMOKE. KEEP OUT OF REACH OF CHILDREN. CONTAINS 5.5% FLAMMABLE COMPONENTS</font>
+                                </div>
+                                <div className="content-tc">
+                                    <font>Apply a small amount of gel in your hand - in combination with water, the gel turns into a rich foam sensation</font>
+                                </div>
+                                <div className="content-tc active">
+                                    <table className="shippingPromotionTable">
+                                        <tr>
+                                            <td>
+                                                <p></p>
+                                                <p>Due to pressure, the delivery time is: 1-2 working days</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Free shipping on orders over € 30.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Free returns within 90 days.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p>
+                                        <a>
+                                            <font>Read our FAQ for more information about</font>
+                                            <br />
+                                            <font>international shipping, rates and returns .</font>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
