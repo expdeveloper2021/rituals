@@ -1,0 +1,19 @@
+.main-hd .card-rit {
+    width: 23%;
+}
+
+.main-hd .content-crit {
+    padding: 20px;
+}
+
+@media (max-width: 817px) {
+    .main-hd .card-rit {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-hd .img-crit {
+        height: 250px;
+    }
+}

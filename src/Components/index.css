@@ -277,3 +277,26 @@
 .right-hb span {
     margin: 0px 15px;
 }
+
+/* Sidebar */
+
+.menu-sidebar {
+    width: 50%;
+    height: 400px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 2;
+    transition: left .4s cubic-bezier(.32, .24, .15, 1);
+    left: -50%;
+    padding-top: 106px;
+}
+
+.menu-sidebar.active {
+    left: 0px;
+}
+
+@media (min-width: 1025px) {
+    .menu-sidebar {
+        width: 500px;
+    }
+}
