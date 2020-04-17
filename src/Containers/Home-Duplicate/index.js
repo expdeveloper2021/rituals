@@ -39,8 +39,8 @@ export class HomeDuplicate extends Component {
                         }}>
                         <div className="inner-wrapper" style={{ zIndex: 100 }}>
                             <div className="inner-intended">
-                                <div className="ico-logorh d-none d-md-block">
-                                </div>
+                                {/* <div className="ico-logorh d-none d-md-block">
+                                </div> */}
                                 <h1 className="heading-bhf txt-white" >Een paasverrassing</h1>
                                 <p className="txt-white">Deel een luxueus cadeau, speels verpakt als een paasei</p>
                                 <button>VUL JE MAND</button>
@@ -55,7 +55,6 @@ export class HomeDuplicate extends Component {
                 <div className="card-sec-rit">
                     <div className="inner-wrapper">
                         <div className="all-cards-rit">
-
                             <div className="card-rit" data-aos="fade-in">
                                 <div className="content-crit">
                                     <h3>The Ritual of Shakura</h3>
@@ -105,27 +104,6 @@ export class HomeDuplicate extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="third-sec-main">
-                    <div className="slider-products">
-                        <div className="sp-card hiddenMob">
-                            <h2>Favorieten in spe</h2>
-                            <h3>Nieuw binnen</h3>
-                            <p>Begin je dag met een heerlijk <br /> ontspannende verzorgingsroutine en <br /> verwen je huid met jouw favoriete producten.</p>
-                            <button>SHOP NU</button>
-                        </div>
-                        {this.state.arr.map((e) => {
-                            return <div className="sp-card" key={e}>
-                                <div className="img-cardsp">
-                                    <img src={`./assets/product${e}.webp`} width="100%" height="100%" />
-                                </div>
-                                <div className="content-cardsp">
-                                    <h1 className="product-title">Easter Egg Giftset</h1>
-                                    <p className="product-price">€8,50</p>
-                                </div>
-                            </div>
-                        })}
                     </div>
                 </div>
                 <div className="card-sec-rit">
@@ -180,27 +158,6 @@ export class HomeDuplicate extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="third-sec-main">
-                    <div className="slider-products">
-                        <div className="sp-card hiddenMob">
-                            <h2>Favorieten in spe</h2>
-                            <h3>Nieuw binnen</h3>
-                            <p>Begin je dag met een heerlijk <br /> ontspannende verzorgingsroutine en <br /> verwen je huid met jouw favoriete producten.</p>
-                            <button>SHOP NU</button>
-                        </div>
-                        {this.state.arr.map((e) => {
-                            return <div className="sp-card" key={e}>
-                                <div className="img-cardsp">
-                                    <img src={`./assets/product${e}.webp`} width="100%" height="100%" />
-                                </div>
-                                <div className="content-cardsp">
-                                    <h1 className="product-title">Easter Egg Giftset</h1>
-                                    <p className="product-price">€8,50</p>
-                                </div>
-                            </div>
-                        })}
                     </div>
                 </div>
                 <div className="card-sec-rit">
