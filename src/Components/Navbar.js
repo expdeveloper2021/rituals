@@ -24,7 +24,16 @@ export class Navbar extends Component {
         }
     }
 
+    componentWillUnmount() {
+        this.setState({ menuOpen: false })
+    }
+
     render() {
+        if (!!this.state.menuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
         return (
             <div>
                 <div className="header-main">
@@ -90,7 +99,38 @@ export class Navbar extends Component {
                     </div>
                 </div>
                 <div className={`menu-sidebar ${!!this.state.menuOpen ? 'active' : ''}`}>
-
+                    {this.state.menuOpen && <ul className="navbar-nav closeNav">
+                        <li className="nav-item" onClick={() => this.setState({ menuOpen: false })}>
+                            <a className="nav-link">
+                                <CloseIcon />
+                            </a>
+                        </li>
+                    </ul>}
+                    <div className="nav-desktop-inner-menu">
+                        <ul className="nav-inner-subnav">
+                            <li>
+                                <a>New</a>
+                            </li>
+                            <li>
+                                <a>Bath & Body</a>
+                            </li>
+                            <li>
+                                <a>Interieurparfum</a>
+                            </li>
+                            <li>
+                                <a>Kitchen Essentials</a>
+                            </li>
+                            <li>
+                                <a>Cadeaus</a>
+                            </li>
+                            <li>
+                                <a>Skincare</a>
+                            </li>
+                            <li>
+                                <a>Haar</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         )
