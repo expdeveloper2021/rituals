@@ -5,6 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import CloseIcon from '@material-ui/icons/Close';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 import './index.css'
 
 export class Navbar extends Component {
@@ -62,16 +63,16 @@ export class Navbar extends Component {
                                     <nav className="navbar navbar-expand-lg">
                                         <div className="mymenu" id="navbarSupportedContent">
                                             <ul className="navbar-nav slideractive" id="menu">
-                                                <li className="nav-item" onClick={() => this.setState({ menuOpen: true })}>
+                                                <li className="nav-item" onClick={() => this.setState({ menuOpen: true, active: false })}>
                                                     <a className="nav-link">Producten</a>
                                                 </li>
-                                                <li className="nav-item" onClick={() => this.setState({ menuOpen: true })}>
+                                                <li className="nav-item" onClick={() => this.setState({ menuOpen: true, active: false })}>
                                                     <a className="nav-link">Collecties</a>
                                                 </li>
-                                                <li className="nav-item" onClick={() => this.setState({ menuOpen: true })}>
+                                                <li className="nav-item" onClick={() => this.setState({ menuOpen: true, active: false })}>
                                                     <a className="nav-link">Cadeaus</a>
                                                 </li>
-                                                <li className="nav-item" onClick={() => this.setState({ menuOpen: true })}>
+                                                <li className="nav-item" onClick={() => this.setState({ menuOpen: true, active: false })}>
                                                     <a className="nav-link">Magazine</a>
                                                 </li>
                                             </ul>
@@ -108,6 +109,43 @@ export class Navbar extends Component {
                     </ul>}
                     <div className="nav-desktop-inner-menu">
                         <ul className="nav-inner-subnav">
+                            <li>
+                                <a>New</a>
+                            </li>
+                            <li>
+                                <a>Bath & Body</a>
+                            </li>
+                            <li>
+                                <a>Interieurparfum</a>
+                            </li>
+                            <li>
+                                <a>Kitchen Essentials</a>
+                            </li>
+                            <li>
+                                <a>Cadeaus</a>
+                            </li>
+                            <li>
+                                <a>Skincare</a>
+                            </li>
+                            <li>
+                                <a>Haar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className={`menu-sidebar mobile-menu ${!!this.state.menuOpen ? 'active' : ''}`}>
+                    {this.state.menuOpen && <ul className="navbar-nav closeNav">
+                        <li className="nav-item" onClick={() => this.setState({ menuOpen: false })}>
+                            <a className="nav-link">
+                                <CloseIcon />
+                            </a>
+                        </li>
+                    </ul>}
+                    <div className="nav-desktop-inner-menu">
+                        <ul className="nav-inner-subnav">
+                            <li className="backbutton" onClick={() => this.setState({ menuOpen: false, active: true, })}>
+                                <a><KeyboardBackspaceIcon /></a>
+                            </li>
                             <li>
                                 <a>New</a>
                             </li>

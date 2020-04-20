@@ -268,7 +268,8 @@
         display: block;
     }
     .header1 nav ul.navbar-nav.menulinks>li.nav-item>a.nav-link, .header1 nav ul.navbar-nav.slideractive>li.nav-item>a.nav-link {
-        font-size: 1.35rem;
+        font-size: 30px;
+        margin-bottom: 34px;
         color: black !important;
     }
 }
@@ -327,6 +328,10 @@
     padding: 50px 0px 20px 20px;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .nav-inner-subnav li {
     display: block;
     list-style-type: none;
@@ -357,6 +362,13 @@
     }
     .heading-hb {
         top: 1px;
+    }
+    .mobile-menu {
+        width: 100%;
+        left: 0px;
+    }
+    .mobile-menu.active {
+        display: block;
     }
 }
 
@@ -391,5 +403,16 @@
     }
     .nav-desktop-inner-menu {
         width: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .backbutton {
+        margin-bottom: 34px;
+    }
+    .nav-inner-subnav li a {
+        padding: 5px 0px;
+        color: white;
+        font-size: 22px;
     }
 }
