@@ -350,6 +350,24 @@
 .grid-placeholder {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+
+.grid-wrap {
+    height: 2350px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.grid-wrap .item {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    width: calc(50% - 5px);
+    margin: 0px auto;
 }
 
 @media (min-width: 768px) {
@@ -494,6 +512,13 @@
     .product-filters li {
         margin-bottom: 25px;
         padding: 0 25px;
+    }
+    .grid-wrap {
+        margin-bottom: 0;
+    }
+    .grid-wrap .item {
+        margin-bottom: 60px;
+        width: calc(33.3333% - 74px);
     }
 }
 

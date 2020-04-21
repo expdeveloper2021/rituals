@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './index.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+AOS.init();
 
 export class CollectionStoryJing extends Component {
 
@@ -200,7 +204,150 @@ export class CollectionStoryJing extends Component {
                         <div className="inner-wrapper">
                             <div className="grid-placeholder">
                                 <div className="grid-wrap">
-
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dwf847af0d/images/grid/1107134_TheRitualofJingFragranceSticksPROBOXgrid.png?sw=201&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw23454599/images/grid/1106885_TheRitualofJingSleepBathCrystalsPROgrid.png?sw=151&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw25a54d55/images/grid/1106876_TheRitualofJingBodyCream220mlPROgrid.png?sw=226&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dwf847af0d/images/grid/1107134_TheRitualofJingFragranceSticksPROBOXgrid.png?sw=201&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw23454599/images/grid/1106885_TheRitualofJingSleepBathCrystalsPROgrid.png?sw=151&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
+                                    <div className="item"  data-aos="fade-in">
+                                        <div className="card-bimage">
+                                            <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw25a54d55/images/grid/1106876_TheRitualofJingBodyCream220mlPROgrid.png?sw=226&q=100" />
+                                        </div>
+                                        <div className="content-bimage">
+                                            <span style={{ textTransform: "uppercase" }} className="heading-hss">THE RITUAL OF SAKURA</span>
+                                            <h2>Shower Foam 50ml</h2>
+                                            <p className="short-desc-bi">doucheschium</p>
+                                            <p className="product-price-bi">€8,50</p>
+                                            <button>IN WINKELMAND</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
