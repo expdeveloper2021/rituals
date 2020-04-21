@@ -1,0 +1,533 @@
+.discover-block {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    padding: 20px 20px 36px;
+}
+
+.inner-wrapper-db {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.btn-scroll-down {
+    display: inline-block;
+    border: 0px;
+    color: white !important;
+    font-size: 14px;
+    letter-spacing: 4.8px;
+    line-height: 20px;
+    padding: 0px 0px 22px;
+    text-decoration: none;
+    transition: opacity .6s ease;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.inner-wrapper-db .short-desc {
+    width: 100%;
+}
+
+.short-desc p {
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 25px;
+    letter-spacing: .6px;
+    line-height: 44px;
+    margin-bottom: 10px;
+    color: #453f3f;
+}
+
+.discover-block button {
+    margin: 17px;
+    background-color: transparent;
+    border: 1px solid #b4b4b4;
+    color: #1a1919;
+    display: inline-block;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    min-width: 220px;
+    max-width: 280px;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+    font-weight: 600;
+}
+
+.discover-block button:hover {
+    border-color: black;
+}
+
+.collection-cards-block {
+    padding: 31px 5px 31px;
+    margin-bottom: 30px;
+}
+
+.collection-cards-block .img-crit {
+    height: 230px;
+}
+
+.three-title-magazine-block {
+    padding: 20px 0px 36px;
+}
+
+.three-title-magazine-block .inner-wrapper {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.three-title-magazine-block .subtitle {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    color: #865;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.three-title-magazine-block .title {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    text-transform: none;
+    text-align: center;
+    color: #1a1919;
+    max-width: 165px;
+    margin: 0 auto 40px;
+}
+
+.magazine-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.magazine-tile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.magazine-tile:not(:last-of-type) {
+    margin-top: 37ox;
+}
+
+.magazine-tile .image-holder {
+    display: inline-block;
+}
+
+.image-holder a {
+    display: block;
+    width: 100%;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #865;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.image-mt {
+    height: 100%;
+    width: 100%;
+    min-height: 130px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-holder {
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+}
+
+.text-holder .ritual-name {
+    color: #865;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.text-holder .description {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #1a1919;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    margin: 0 auto 7px;
+}
+
+.text-holder .link {
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    color: #865;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 18px;
+}
+
+.collection-narrow-highlight-block {
+    width: 100%;
+}
+
+.collection-narrow-highlight-block .inner-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.collection-narrow-highlight-block .media-column {
+    width: 100%;
+    position: relative;
+}
+
+.media-column .img-holder {
+    background-image: url(https://www.rituals.com/on/demandware.static/-/Library-Sites-RitualsSharedContent/nl_NL/v1587447440124/Collection-pages/2020/Jing/MM-app-JING-block@2x.jpg?);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.collection-narrow-highlight-block .text-column {
+    background-color: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.collection-narrow-highlight-block h3 {
+    color: #865;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.collection-narrow-highlight-block h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 44px;
+    margin-bottom: 22px;
+    text-transform: none;
+}
+
+.collection-narrow-highlight-block p {
+    font-size: 13px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    color: #453f3f;
+}
+
+.i-minDesktop, .i-minTablet {
+    display: none;
+}
+
+.collection-narrow-highlight-block .buttons-wrap a {
+    display: inline-block;
+    font-size: 0;
+    line-height: normal;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.buttons-wrap img {
+    width: 99.16px;
+    height: 30px;
+}
+
+.collection-grid-section {
+    background-color: #3F6361;
+}
+
+.product-grid-block {
+    display: block;
+    padding: 52px 0px;
+}
+
+.product-grid-block .heading-wrapper {
+    max-width: 1440px;
+    margin: 0 auto 21px;
+    position: relative;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.heading-wrapper .grid-heading {
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.product-filters {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.product-filters li {
+    padding: 0 12px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.product-filters .filter-item {
+    color: white;
+    cursor: pointer;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0 7px;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 1.7px;
+    line-height: 14px;
+}
+
+.product-filters .filter-item:hover {
+    color: white;
+}
+
+.filter-item.selected:after, .filter-item:hover:after {
+    width: 100%;
+}
+
+.filter-item:after {
+    background-color: white;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: width .3s cubic-bezier(.05, .5, .3, 1);
+    width: 0;
+}
+
+.product-grid-block .inner-wrapper {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+.grid-placeholder {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .discover-block {
+        padding: 37px 0px 60px;
+    }
+    .inner-wrapper-db {
+        max-width: 1080px;
+        padding: 0px 60px;
+    }
+    .btn-scroll-down {
+        color: #b4b4b4 !important;
+        font-size: 16px;
+        left: auto;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+        padding: 0 0 10px;
+        position: relative;
+        top: auto;
+        width: auto;
+    }
+    .collection-cards-block {
+        padding: 50px 0px 0px;
+    }
+    .collection-cards-block .img-crit {
+        height: 300px;
+    }
+    .three-title-magazine-block .subtitle {
+        margin-bottom: 1px;
+    }
+    .three-title-magazine-block .title {
+        letter-spacing: .46px;
+        line-height: 44px;
+        margin-bottom: 29px;
+        max-width: none;
+    }
+    .magazine-title-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .magazine-tile {
+        width: 30%;
+        flex-basis: 30%;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .image-mt {
+        min-height: 245px;
+    }
+    .text-holder .description {
+        max-width: 250px;
+        margin-bottom: 17px;
+        font-size: 22px;
+        letter-spacing: .5px;
+        line-height: 28px;
+    }
+    .text-holder .link {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1.6px;
+        line-height: 20px;
+    }
+    .collection-narrow-highlight-block {
+        margin: 30px 0px 60px;
+    }
+    .collection-narrow-highlight-block .inner-wrapper {
+        display: flex;
+        max-width: 1360px;
+    }
+    .collection-narrow-highlight-block .media-column {
+        width: 50%;
+    }
+    .collection-narrow-highlight-block .text-column {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 560px;
+        padding: 30px;
+        width: 50%;
+    }
+    .collection-narrow-highlight-block .column-inner {
+        max-width: 380px;
+        width: 100%;
+    }
+    .collection-narrow-highlight-block h3 {
+        margin-bottom: 0;
+    }
+    .collection-narrow-highlight-block h2 {
+        margin-bottom: 12px;
+    }
+    .collection-narrow-highlight-block .action-boxes {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 9px;
+    }
+    .collection-narrow-highlight-block .col {
+        border-right: 1px solid #999;
+        padding: 10px 10px 5px;
+        width: 50%;
+    }
+    .collection-narrow-highlight-block .col:nth-child(2n) {
+        border-right: 0;
+    }
+    .collection-narrow-highlight-block .img-wrap {
+        margin: 0 auto;
+        max-width: 100px;
+    }
+    .img-wrap img {
+        width: 100%;
+        display: block;
+    }
+    .collection-narrow-highlight-block .image-label {
+        display: block;
+        font-size: 12px;
+        font-style: italic;
+        letter-spacing: 1px;
+        line-height: 18px;
+        margin-top: 10px;
+    }
+    .collection-narrow-highlight-block .buttons-wrap {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .collection-narrow-highlight-block .buttons-wrap a {
+        margin-bottom: 10px;
+    }
+    .collection-narrow-highlight-block .buttons-wrap a:last-child {
+        margin-bottom: 0;
+    }
+    .product-grid-block {
+        padding: 90px 0 40px;
+    }
+    .product-grid-block .heading-wrapper {
+        margin: 0 auto 28px;
+    }
+    .heading-wrapper .grid-heading {
+        margin-bottom: 40px;
+    }
+    .product-filters li {
+        margin-bottom: 25px;
+        padding: 0 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inner-wrapper-db {
+        padding: 0px 20px;
+    }
+    .collection-cards-block .img-crit {
+        height: 420px;
+    }
+    .collection-narrow-highlight-block .text-column {
+        padding: 50px;
+    }
+    .collection-narrow-highlight-block .col {
+        padding: 10px 30px 5px;
+    }
+    .i-minDesktop {
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .magazine-tile .image-holder {
+        width: 49%;
+    }
+    .magazine-tile .text-holder {
+        width: 49%;
+        text-align: left;
+        padding: 5px 10px 5px 19px;
+    }
+    .text-holder .link {
+        font-size: 12px;
+    }
+    .magazine-tile:not(:last-of-type) {
+        margin-bottom: 37px;
+    }
+}

@@ -54,6 +54,9 @@ export class Navbar extends Component {
                     </div>
                     <div className="inner-wrapper">
                         <div className="header-bottom">
+                            <div className="heading-hb">
+                                <img src={logo} height="50" alt="logofirst" />
+                            </div>
                             <div className="lists-hb">
                                 <button className="navbar-toggler d-sm-block d-md-none" type="button" onClick={() => this.setState({ active: !this.state.active })} style={{ outline: "none" }}>
                                     {this.state.active ? <CloseIcon style={{ fontSize: 22, fill: "black" }} /> : <MenuIcon className="menuopen" style={{ fontSize: 22, fill: "white" }} />}
@@ -79,9 +82,6 @@ export class Navbar extends Component {
                                         </div>
                                     </nav>
                                 </header>
-                            </div>
-                            <div className="heading-hb">
-                                <img src={logo} height="50" alt="logofirst" />
                             </div>
                             <div className="right-hb">
                                 <div className="inut-rhbn">

@@ -87,7 +87,6 @@
     justify-content: center;
     align-content: center;
     position: absolute;
-    left: 57px;
     top: 20px;
     width: 117px;
     opacity: 1;
@@ -153,6 +152,9 @@
         padding: 0;
         width: 100%;
         display: block;
+    }
+    .heading-hb {
+        left: 57px;
     }
 }
 
@@ -374,7 +376,7 @@
 
 @media (min-width: 1025px) {
     .menu-sidebar {
-        width: 500px;
+        width: 400px;
     }
     .heading-hb {
         width: 160px;
@@ -389,15 +391,22 @@
 }
 
 @media (min-width: 768px) {
-    .heading-hb {
-        left: 50%;
+    .lists-hb {
+        position: absolute;
+        left: 45%;
         transform: translateX(-50%);
+        top: 45px;
+    }
+    .right-hb {
+        position: absolute;
+        right: 10px;
+        top: 45px;
     }
 }
 
 @media (min-width: 1440px) {
     .menu-sidebar {
-        width: 900px;
+        width: 700px;
         display: flex;
         justify-content: flex-end;
     }

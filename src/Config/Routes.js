@@ -9,6 +9,7 @@ import Account from '../Containers/Account'
 import EditProfile from '../Containers/Edit Profile'
 import ProductDetail from '../Containers/Product-Detail'
 import HomeDuplicate from '../Containers/Home-Duplicate'
+import CollectionStoryJing from '../Containers/CollectionStoryJing'
 
 const CreateBrowserHistory = require("history").createBrowserHistory
 const history = CreateBrowserHistory()
@@ -26,6 +27,7 @@ export class Routes extends Component {
                 <Route path="/account-edit-profile" component={EditProfile} />
                 <Route path="/product-detail" component={ProductDetail} />
                 <Route path="/duplicate-home" component={HomeDuplicate} />
+                <Route path="/collection-story-jing" component={CollectionStoryJing} />
             </Router>
         )
     }
