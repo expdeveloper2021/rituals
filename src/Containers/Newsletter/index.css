@@ -1,0 +1,166 @@
+.newsletter {
+    padding: 9px 0 78px;
+}
+
+.newsletter-content {
+    padding: 0 24px 0 33px;
+    margin-top: 20px;
+}
+
+.newsletter-content p {
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    color: #453f3f;
+    margin-bottom: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.newsletter-content a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #865;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.newsletter-content .signup-label {
+    display: block;
+    margin: 29px 0 34px;
+    padding-left: 32px;
+    position: relative;
+}
+
+.newsletter-content .newsletter-checkbox {
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+}
+
+.newsletter-content .inputfield-row {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.inputfield-row .input-checkbox {
+    height: 1px;
+    left: 2px;
+    opacity: 0;
+    position: absolute;
+    top: 2px;
+    width: 1px;
+}
+
+.inputfield-row label {
+    display: block;
+    height: 16px;
+    position: relative;
+    width: 16px;
+    color: #1a1919;
+    line-height: 20px;
+    letter-spacing: .5px;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.newsletter-checkbox label::before {
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    content: '';
+    display: inline-block;
+    left: 0;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    width: 16px;
+}
+
+.newsletter-checkbox input:checked~label::before {
+    background-color: #865;
+    border-color: #865;
+}
+
+.newsletter-checkbox label::before {
+    top: 3px;
+}
+
+.signup-label .newsletter-label {
+    display: block;
+    line-height: 20px;
+    cursor: pointer;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 400;
+}
+
+.newsletter-row {
+    margin-top: 30px;
+    max-width: none;
+    margin: 0px auto;
+}
+
+.newsletter-row button {
+    margin-bottom: 20px;
+    background-color: #1a1919;
+    border: 1px solid #1a1919;
+    color: #fff;
+    display: inline-block;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    min-width: 220px;
+    max-width: 280px;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+}
+
+.newsletter-row button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.linked-email-container p {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: 1px;
+    color: #453f3f;
+}
+
+@media (min-width: 768px) {
+    .newsletter {
+        margin-top: -4px;
+        padding: 0px 0px 46px;
+    }
+    .newsletter-content {
+        margin-top: 15px;
+        padding-right: 33px;
+    }
+    .inputfield-row input[type=checkbox]+label {
+        line-height: 22px;
+    }
+    .newsletter-row {
+        display: flex;
+        align-items: center;
+    }
+    .newsletter-row button {
+        margin: 0 40px 0 0;
+        width: auto;
+    }
+}
