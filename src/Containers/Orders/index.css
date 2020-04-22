@@ -1,0 +1,49 @@
+.orders-container {
+    padding: 15px 0 60px;
+}
+
+.no-orders p {
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    color: #453f3f;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.account-right-content .btn-container {
+    margin-top: 30px;
+    max-width: none;
+}
+
+.account-right-content .btn-container button {
+    background-color: #1a1919;
+    border: 1px solid #1a1919;
+    color: #fff;
+    display: inline-block;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    min-width: 220px;
+    max-width: 280px;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.account-right-content .btn-container button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .orders-container {
+        padding: 18px 35px 0 46px;
+    }
+}
