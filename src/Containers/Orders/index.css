@@ -1,8 +1,8 @@
-.orders-container {
+.orders-container, .address-container {
     padding: 15px 0 60px;
 }
 
-.no-orders p {
+.no-orders p, .no-addresses p {
     font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     font-style: normal;
     color: #453f3f;
@@ -43,7 +43,7 @@
 }
 
 @media (min-width: 768px) {
-    .orders-container {
+    .orders-container, .address-container {
         padding: 18px 35px 0 46px;
     }
 }

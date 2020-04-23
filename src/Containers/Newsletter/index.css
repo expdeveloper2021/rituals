@@ -164,3 +164,9 @@
         width: auto;
     }
 }
+
+@media (max-width: 767px) {
+    .newsletter-content {
+        padding: 5px;
+    }
+}

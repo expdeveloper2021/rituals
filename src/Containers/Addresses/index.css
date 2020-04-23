@@ -1,49 +1,103 @@
-.orders-container {
-    padding: 15px 0 60px;
+.address-list-container {
+    width: 100%;
+    padding: 16px 0px 80px;
 }
 
-.no-orders p {
-    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    font-style: normal;
+.address-list {
+    width: 100%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.address-list-container .address-list .address-tile.default {
+    margin-bottom: 37px;
+    padding-bottom: 0;
+}
+
+.address-list-container .address-list .secondary-title {
+    color: #453f3f;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+}
+
+.address-list-container .address-list .address-wrapper {
     color: #453f3f;
     font-size: 16px;
-    line-height: 28px;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    line-height: 20px;
 }
 
-.account-right-content .btn-container {
-    margin-top: 30px;
-    max-width: none;
+.address-list-container .address-list .address-tile.default .address-wrapper {
+    background-color: #fcfaf7;
+    padding: 20px;
 }
 
-.account-right-content .btn-container button {
-    background-color: #1a1919;
-    border: 1px solid #1a1919;
-    color: #fff;
-    display: inline-block;
+.address-list .mini-address-name {
+    margin-bottom: 6px;
+}
+
+.address-wrapper .mini-address-name+.mini-address-name {
+    display: none;
+}
+
+.address-wrapper font {
     font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    letter-spacing: 2px;
-    line-height: 1.2;
-    min-width: 220px;
-    max-width: 280px;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .2s ease-in-out;
-    cursor: pointer;
+    letter-spacing: 1px;
+    color: #453f3f;
 }
 
-.account-right-content .btn-container button:hover {
-    background-color: transparent;
-    color: black;
+.address-wrapper .mini-address-location {
+    margin-bottom: 25px;
+}
+
+.mini-address-location address {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.address-actions a {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    margin-right: 0px;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #865;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
 
 @media (min-width: 768px) {
-    .orders-container {
-        padding: 18px 35px 0 46px;
+    .address-list-container {
+        padding: 17px 0 47px 47px;
+    }
+    .address-list-container .address-list .address-tile.default {
+        padding-bottom: 0;
+    }
+    .address-list-container .address-list .address-tile.default .address-wrapper {
+        padding: 42px 40px 28px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .address-wrapper .mini-address-name {
+        width: 45%;
+    }
+    .address-wrapper .mini-address-location {
+        margin-bottom: 0;
+        order: 3;
+        width: 45%;
+    }
+    .address-wrapper .address-actions {
+        margin-top: -4px;
+        order: 2;
+        text-align: right;
+        width: 55%;
     }
 }

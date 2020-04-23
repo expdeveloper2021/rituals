@@ -9,6 +9,15 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import './index.css'
 
 export class Addresses extends Component {
+
+    constructor() {
+        super()
+        this.state = {
+            arr: [1, 2]
+        }
+    }
+
+
     render() {
         return (
             <div>
@@ -19,14 +28,14 @@ export class Addresses extends Component {
                             <span className="icon-user">
                                 <AccountCircleOutlinedIcon style={{ fontSize: 54 }} />
                             </span>
-                            <font>MAURICE REIJESRSEN</font>
+                            <font>MAURICE REIJERSEN</font>
                         </h1>
                         <div className="account-left-content">
                             <h1 className="account-title">
                                 <span className="icon-user">
                                     <AccountCircleOutlinedIcon style={{ fontSize: 54 }} />
                                 </span>
-                                <font>MAURICE REIJESRSEN</font>
+                                <font>MAURICE REIJERSEN</font>
                             </h1>
                             <div className="account-menu-wrap">
                                 <ul className="account-menu">
@@ -58,14 +67,47 @@ export class Addresses extends Component {
                                         <span>DIRECTORY</span>
                                     </h2>
                                 </div>
-                                <div className="orders-container">
-                                    <div className="no-orders">
+                                {this.state.arr.length > 0 ? <div className="address-list-container">
+                                    <ul className="address-list">
+                                        <li className="address-tile default">
+                                            <h3 className="secondary-title">
+                                                ADDRESS MYRITUALS PROFILE
+                                            </h3>
+                                            <div className="address-wrapper">
+                                                <div className="mini-address-name">
+                                                    <font>Maurice Reijersen</font>
+                                                </div>
+                                                <div className="mini-address-name">
+
+                                                </div>
+                                                <div className="mini-address-location">
+                                                    <address>
+                                                        <font>Winde 18</font>
+                                                        <br />
+                                                        <font>Borne, 7623 NE</font>
+                                                        <br />
+                                                        <font>The Netherlands</font>
+                                                    </address>
+                                                </div>
+                                                <div className="address-actions">
+                                                    <a>
+                                                        Modify
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="btn-container">
+                                                <button>ADD ADDRESS</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> : <div className="no-addresses">
                                         <p>There are currently no addresses associated with your account.</p>
-                                    </div>
-                                    <div className="btn-container">
-                                        <button>ADD ADDRESS</button>
-                                    </div>
-                                </div>
+                                        <div className="btn-container">
+                                            <button>ADD ADDRESS</button>
+                                        </div>
+                                    </div>}
                             </div>
                         </div>
                     </div>

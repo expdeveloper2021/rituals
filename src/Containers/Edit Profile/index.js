@@ -32,14 +32,14 @@ export class EditProfile extends Component {
                             <span className="icon-user">
                                 <AccountCircleOutlinedIcon style={{ fontSize: 54 }} />
                             </span>
-                            <font>MAURICE REIJESRSEN</font>
+                            <font>MAURICE REIJERSEN</font>
                         </h1>
                         <div className="account-left-content">
                             <h1 className="account-title">
                                 <span className="icon-user">
                                     <AccountCircleOutlinedIcon style={{ fontSize: 54 }} />
                                 </span>
-                                <font>MAURICE REIJESRSEN</font>
+                                <font>MAURICE REIJERSEN</font>
                             </h1>
                             <div className="account-menu-wrap">
                                 <ul className="account-menu">

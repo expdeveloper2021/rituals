@@ -19,14 +19,14 @@ export class Newsletter extends Component {
                             <span className="icon-user">
                                 <AccountCircleOutlinedIcon style={{ fontSize: 54 }} />
                             </span>
-                            <font>MAURICE REIJESRSEN</font>
+                            <font>MAURICE REIJERSEN</font>
                         </h1>
                         <div className="account-left-content">
                             <h1 className="account-title">
                                 <span className="icon-user">
                                     <AccountCircleOutlinedIcon style={{ fontSize: 54 }} />
                                 </span>
-                                <font>MAURICE REIJESRSEN</font>
+                                <font>MAURICE REIJERSEN</font>
                             </h1>
                             <div className="account-menu-wrap">
                                 <ul className="account-menu">
@@ -73,8 +73,8 @@ export class Newsletter extends Component {
                                         <label className="signup-label">
                                             <div className="newsletter-checkbox">
                                                 <div className="inputfield-row">
-                                                    <input type="checkbox" checked className="input-checkbox" id="addtoemaillist" />
-                                                    <label for="addtoemaillist"></label>
+                                                    <input type="checkbox" defaultChecked className="input-checkbox" id="addtoemaillist" />
+                                                    <label htmlFor="addtoemaillist"></label>
                                                 </div>
                                             </div>
                                             <span className="newsletter-label">Yes, I would like to receive emails from Rituals with updates on member promotions and new products.</span>
@@ -85,8 +85,8 @@ export class Newsletter extends Component {
                                         <label className="signup-label">
                                             <div className="newsletter-checkbox">
                                                 <div className="inputfield-row">
-                                                    <input type="checkbox" checked className="input-checkbox" id="addtoemaillist" />
-                                                    <label for="addtoemaillist"></label>
+                                                    <input type="checkbox" defaultChecked className="input-checkbox" id="addtoemaillist" />
+                                                    <label htmlFor="addtoemaillist"></label>
                                                 </div>
                                             </div>
                                             <span className="newsletter-label">Yes, I would like to receive emails about exclusive gifts, inspiring articles and invitations to special Member events.</span>
