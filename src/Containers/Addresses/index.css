@@ -190,10 +190,19 @@
     margin-top: 5px;
 }
 
+.addresslist-fieldset-inner .btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
 .addresslist-fieldset-inner .cancelbtn {
     background-color: transparent;
     color: #1a1919;
     border: 1px solid #b4b4b4;
+}
+
+.cancelbtn:hover {
+    border: 1px solid black;
 }
 
 @media (min-width: 768px) {

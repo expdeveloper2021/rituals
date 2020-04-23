@@ -16,7 +16,7 @@ export class Addresses extends Component {
         super()
         this.state = {
             arr: [1, 2],
-            modal: true,
+            modal: false,
         }
     }
 

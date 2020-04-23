@@ -42,8 +42,128 @@
     color: black;
 }
 
+.account-right-content .order-block {
+    background-color: #fcfaf7;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.order-block-inner {
+    display: flex;
+    padding: 14px;
+    position: relative;
+}
+
+.order-block-inner::before {
+    background-color: #d6122d;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+
+.order-block-inner .order-image {
+    text-align: center;
+    width: 70px;
+}
+
+.order-image img {
+    max-width: 100%;
+}
+
+.order-block .order-details {
+    padding: 0 5px 0 15px;
+    width: calc(100% - 114px);
+}
+
+.order-block .order-detail-date {
+    color: #1a1919;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 29px;
+    margin-bottom: 5px;
+}
+
+.order-block .order-detail-number {
+    color: #453f3f;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    margin-bottom: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bottom-row span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order-detail-price, .order-detail-size, .order-detail-status {
+    color: #453f3f;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.account-right-content .order-arrow {
+    border-left: 1px solid #d8d8d8;
+    margin: 5px 0;
+    position: relative;
+    width: 44px;
+}
+
+.order-arrow span {
+    color: #1a1919;
+    position: absolute;
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @media (min-width: 768px) {
     .orders-container, .address-container {
         padding: 18px 35px 0 46px;
+    }
+    .account-right-content .order-block {
+        margin-left: 46px;
+        width: calc(100% - 46px);
+    }
+    .order-block-inner {
+        padding: 26px 24px;
+        cursor: pointer;
+    }
+    .order-block-inner .order-image {
+        text-align: center;
+        width: 100px;
+    }
+    .order-block .order-details {
+        padding: 0 5px 0 36px;
+        width: calc(100% - 144px);
+    }
+    .order-block .order-detail-number {
+        margin-bottom: 17px;
+    }
+    .order-detail-price, .order-detail-size {
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+        vertical-align: top;
+    }
+    .order-detail-status {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+    }
+    .order-detail-price::after, .order-detail-size::after {
+        content: '|';
+        margin-left: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .order-arrow span {
+        right: -12px;
     }
 }

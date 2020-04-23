@@ -6,9 +6,18 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './index.css'
 
 export class Orders extends Component {
+
+    constructor() {
+        super()
+        this.state = {
+            arr: [1, 2]
+        }
+    }
+
     render() {
         return (
             <div>
@@ -59,12 +68,46 @@ export class Orders extends Component {
                                     </h2>
                                 </div>
                                 <div className="orders-container">
-                                    <div className="no-orders">
-                                        <p>There are no previous orders for this account.</p>
-                                    </div>
-                                    <div className="btn-container">
-                                        <button>SHOP</button>
-                                    </div>
+                                    {this.state.arr.length > 0 ? <div className="all-orders-list">
+                                        <div className="order-block">
+                                            <div className="order-block-inner">
+                                                <div className="order-image">
+                                                    <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dwae1a38a8/images/zoom/1104565_TheRitualofSakuraMinifragrancesticksBOXPRO.png?sw=130&sh=130&sm=fit&q=100" />
+                                                </div>
+                                                <div className="order-details">
+                                                    <div className="top-row">
+                                                        <div className="order-detail-date">
+                                                            <span>04/22/2020</span>
+                                                        </div>
+                                                        <div className="order-detail-number">
+                                                            <span>GL15588566</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bottom-row">
+                                                        <div className="order-detail-price">
+                                                            <span>€ 31.30</span>
+                                                        </div>
+                                                        <div className="order-detail-size">
+                                                            <span>3 products</span>
+                                                        </div>
+                                                        <div className="order-detail-status">
+                                                            <span>Status: unknown new</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="order-arrow">
+                                                    <span>
+                                                        <ExpandMoreIcon style={{ fontSize: 42 }} />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> : <div className="no-orders">
+                                            <p>There are no previous orders for this account.</p>
+                                            <div className="btn-container">
+                                                <button>SHOP</button>
+                                            </div>
+                                        </div>}
                                 </div>
                             </div>
                         </div>
