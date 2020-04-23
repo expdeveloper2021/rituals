@@ -6,6 +6,8 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import CloseIcon from '@material-ui/icons/Close';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './index.css'
 
 export class Addresses extends Component {
@@ -13,10 +15,10 @@ export class Addresses extends Component {
     constructor() {
         super()
         this.state = {
-            arr: [1, 2]
+            arr: [1, 2],
+            modal: true,
         }
     }
-
 
     render() {
         return (
@@ -98,17 +100,96 @@ export class Addresses extends Component {
                                         </li>
                                         <li>
                                             <div className="btn-container">
-                                                <button>ADD ADDRESS</button>
+                                                <button onClick={() => this.setState({ modal: true })}>ADD ADDRESS</button>
                                             </div>
                                         </li>
                                     </ul>
                                 </div> : <div className="no-addresses">
                                         <p>There are currently no addresses associated with your account.</p>
                                         <div className="btn-container">
-                                            <button>ADD ADDRESS</button>
+                                            <button onClick={() => this.setState({ modal: true })}>ADD ADDRESS</button>
                                         </div>
                                     </div>}
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={`generic-dialog-flyout ${this.state.modal ? "open" : ""}`}>
+                    <div className="generic-flyout-content">
+                        <div className="address-flyout-inner">
+                            <h2 className="edit-address-title">
+                                Add address
+                            </h2>
+                            <fieldset>
+                                <div className="addresslist-fieldset-inner">
+                                    <div className="form-row">
+                                        <div className="inputfield-row">
+                                            <label>First Name</label>
+                                            <input className="inputfield-text" />
+                                        </div>
+                                    </div>
+                                    <div className="form-row">
+                                        <div className="inputfield-row">
+                                            <label>Last Name</label>
+                                            <input className="inputfield-text" />
+                                        </div>
+                                    </div>
+                                    <div className="form-row">
+                                        <div className="inputfield-row">
+                                            <label>Sex</label>
+                                            <select>
+                                                <option>Man</option>
+                                                <option>Woman</option>
+                                                <option>Other</option>
+                                            </select>
+                                            <button className="password-reveal" onClick={() => this.setState({ passwordType: !this.state.passwordType })}>
+                                                <ExpandMoreIcon />
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className="form-row three-inline">
+                                        <div className="inputfield-row">
+                                            <label>Postal Code</label>
+                                            <input className="inputfield-text" />
+                                        </div>
+                                    </div>
+                                    <div className="form-row three-inline">
+                                        <div className="inputfield-row">
+                                            <label>House Number</label>
+                                            <input className="inputfield-text" />
+                                        </div>
+                                    </div>
+                                    <div className="form-row three-inline">
+                                        <div className="inputfield-row">
+                                            <label>Addition <span style={{ color: "#ccc", fontSize: 11, fontFamily: "Roboto", marginLeft: 5 }}>Optional</span> </label>
+                                            <input className="inputfield-text" />
+                                        </div>
+                                    </div>
+                                    <div className="form-row">
+                                        <div className="inputfield-row">
+                                            <label>Street</label>
+                                            <input className="inputfield-text" />
+                                        </div>
+                                    </div>
+                                    <div className="form-row">
+                                        <div className="inputfield-row">
+                                            <label>City</label>
+                                            <input className="inputfield-text" />
+                                        </div>
+                                    </div>
+                                    <div className="form-row form-row-button">
+                                        <button className="btn cancelbtn">
+                                            Cancel
+                                        </button>
+                                        <button className="btn confirmbtn">
+                                            Confirm
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <button className="slide-close" onClick={() => this.setState({ modal: false })}>
+                                <CloseIcon style={{ color: "#453f3f", fontSize: 26 }} />
+                            </button>
                         </div>
                     </div>
                 </div>

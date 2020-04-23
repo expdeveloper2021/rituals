@@ -197,7 +197,7 @@ export class Cart extends Component {
                                                         <fieldset>
                                                             <div className="delivery-postal-code-formrow">
                                                                 <div className="inputfield-row">
-                                                                    <label>Postal Code</label>
+                                                                    <label style={{ width: "100%" }} >Postal Code</label>
                                                                     <input />
                                                                 </div>
                                                             </div>
