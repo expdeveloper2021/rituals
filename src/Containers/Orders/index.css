@@ -61,8 +61,8 @@
     content: '';
     left: 0;
     position: absolute;
-    top: 0;
-    width: 1px;
+    top: 0; 
+    width: 2px;
 }
 
 .order-block-inner .order-image {
@@ -124,6 +124,133 @@
     transform: translateY(-50%);
 }
 
+.order-dropdown-details {
+    padding: 10px;
+    transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.order-dropdown-details .product-row {
+    align-items: flex-start;
+    border-top: 1px solid #d8d8d8;
+    display: flex;
+    margin: 0 0 20px 20px;
+    padding-top: 30px;
+    width: calc(100% - 40px);
+}
+
+.order-dropdown-details .product-row:first-child {
+    border-top: 0;
+    margin-top: 35px;
+    padding-top: 0;
+}
+
+.product-row .product-image {
+    text-align: center;
+    width: 60px;
+}
+
+.product-row .product-image img {
+    max-width: 100%;
+}
+
+.product-row .order-details-right {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    width: calc(100% - 60px);
+}
+
+.order-details-right .product-title {
+    color: #865;
+    font-size: 11px;
+    letter-spacing: 1.65px;
+    line-height: 24px;
+    width: 100%;
+}
+
+.order-details-right .product-name {
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 16px;
+    letter-spacing: 2.6px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.order-details-right .product-variation {
+    color: #453f3f;
+    display: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.order-details-right .product-amount {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order-details-right .product-price {
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.order-dropdown-details .order-totals-block {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+.order-totals-block .order-total-price-row.summary-row {
+    border-bottom: 1px solid #d8d8d8;
+    color: #1a1919;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 27px;
+    padding-bottom: 21px;
+    text-transform: uppercase;
+}
+
+.order-totals-block .order-total-price-row {
+    color: #865;
+    display: flex;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order-totals-block .order-total-price-row .value {
+    margin-left: auto;
+}
+
+.order-totals-block .total {
+    border-top: 1px solid #453f3f;
+    color: #1a1919;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 33px 0 20px;
+    padding-top: 30px;
+}
+
+.order-totals-block .txt--rit-dark {
+    color: #453f3f;
+    font-size: 12px;
+}
+
 @media (min-width: 768px) {
     .orders-container, .address-container {
         padding: 18px 35px 0 46px;
@@ -165,5 +292,52 @@
     }
     .order-arrow span {
         right: -12px;
+    }
+    .order-dropdown-details {
+        padding: 40px 60px 0 40px;
+    }
+    .order-dropdown-details .product-row:first-child {
+        margin: 0;
+    }
+    .order-dropdown-details .product-row {
+        padding: 25px 0 15px 15px;
+        margin: 0 0 20px;
+        width: 100%;
+    }
+    .product-row .product-image {
+        width: 70px;
+    }
+    .product-row .order-details-right {
+        padding: 10px 0 0 35px;
+        width: calc(100% - 70px);
+    }
+    .order-details-right .product-title, .order-details-right .product-name, .order-details-right .product-variation {
+        order: 1;
+        width: calc(100% - 180px);
+    }
+    .order-details-right .product-amount {
+        margin-left: auto;
+        order: 2;
+        text-align: center;
+        width: 60px;
+    }
+    .order-details-right .product-price {
+        margin-left: 0;
+        order: 2;
+        width: 90px;
+    }
+    .order-dropdown-details .order-totals-block {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 0 -40px;
+        padding: 40px 50px 30px;
+        width: calc(100% + 100px);
+    }
+    .order-totals-block .order-total-price-row {
+        max-width: 286px;
+    }
+    .order-totals-block .total {
+        margin: 23px 0 20px;
     }
 }

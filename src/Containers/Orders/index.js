@@ -14,7 +14,8 @@ export class Orders extends Component {
     constructor() {
         super()
         this.state = {
-            arr: [1, 2]
+            arr: [1, 2],
+            modal: false,
         }
     }
 
@@ -69,7 +70,7 @@ export class Orders extends Component {
                                 </div>
                                 <div className="orders-container">
                                     {this.state.arr.length > 0 ? <div className="all-orders-list">
-                                        <div className="order-block">
+                                        <div className="order-block" onClick={() => this.setState({ modal: !this.state.modal })}>
                                             <div className="order-block-inner">
                                                 <div className="order-image">
                                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dwae1a38a8/images/zoom/1104565_TheRitualofSakuraMinifragrancesticksBOXPRO.png?sw=130&sh=130&sm=fit&q=100" />
@@ -99,6 +100,116 @@ export class Orders extends Component {
                                                     <span>
                                                         <ExpandMoreIcon style={{ fontSize: 42 }} />
                                                     </span>
+                                                </div>
+                                            </div>
+                                            <div className="order-dropdown-details" style={{ display: this.state.modal ? "block" : "none" }} >
+                                                <div className="product-row">
+                                                    <div className="product-image">
+                                                        <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dwae1a38a8/images/zoom/1104565_TheRitualofSakuraMinifragrancesticksBOXPRO.png?sw=130&sh=130&sm=fit&q=100" />
+                                                    </div>
+                                                    <div className="order-details-right">
+                                                        <div className="product-title">
+                                                            <font>THE RITUAL OF SAKURA</font>
+                                                        </div>
+                                                        <div className="product-name">
+                                                            <font>MINI FRAGRANCE STICKS</font>
+                                                        </div>
+                                                        <div className="product-variation">
+
+                                                        </div>
+                                                        <div className="product-amount">
+                                                            <font>1</font>
+                                                        </div>
+                                                        <div className="product-price">
+                                                            <font>€ 13.50</font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="product-row">
+                                                    <div className="product-image">
+                                                        <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw8863ffe4/images/zoom/1101682_TheRitualofSakuraWardrobeSachetBOXPRO.png?sw=130&sh=130&sm=fit&q=100" />
+                                                    </div>
+                                                    <div className="order-details-right">
+                                                        <div className="product-title">
+                                                            <font>THE RITUAL OF SAKURA</font>
+                                                        </div>
+                                                        <div className="product-name">
+                                                            <font>WARDROBE SACHET</font>
+                                                        </div>
+                                                        <div className="product-variation">
+
+                                                        </div>
+                                                        <div className="product-amount">
+                                                            <font>1</font>
+                                                        </div>
+                                                        <div className="product-price">
+                                                            <font>€ 14.90</font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="product-row">
+                                                    <div className="product-image">
+                                                        <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw52f9c047/images/zoom/1106469_TheRitualofSakuraZensationalFoamingShowerGel50mlPRO.png?sw=130&sh=130&sm=fit&q=100" />
+                                                    </div>
+                                                    <div className="order-details-right">
+                                                        <div className="product-title">
+                                                            <font>THE RITUAL OF SAKURA</font>
+                                                        </div>
+                                                        <div className="product-name">
+                                                            <font>SHOWER FOAM 50ML</font>
+                                                        </div>
+                                                        <div className="product-variation">
+
+                                                        </div>
+                                                        <div className="product-amount">
+                                                            <font>1</font>
+                                                        </div>
+                                                        <div className="product-price">
+                                                            <font>Free</font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="order-totals-block">
+                                                    <div className="order-total-price-row summary-row">
+                                                        <div className="item">
+                                                            <font>3 PRODUCTS</font>
+                                                        </div>
+                                                        <div className="value">
+                                                            <font>€ 28.40</font>
+                                                        </div>
+                                                    </div>
+                                                    <div className="order-total-price-row">
+                                                        <div className="item">
+                                                            <font>shipping costs</font>
+                                                        </div>
+                                                        <div className="value">
+                                                            <font>€ 2.90</font>
+                                                        </div>
+                                                    </div>
+                                                    <div className="order-total-price-row total">
+                                                        <div className="item">
+                                                            <font>TOTAL</font>
+                                                        </div>
+                                                        <div className="value">
+                                                            <font>€ 31.30</font>
+                                                        </div>
+                                                    </div>
+                                                    <div className="order-total-price-row txt--rit-dark">
+                                                        <div className="item">
+                                                            <font>Delivery</font>
+                                                        </div>
+                                                        <div className="value">
+                                                            <font>PostNL</font>
+                                                        </div>
+                                                    </div>
+                                                    <div className="order-total-price-row txt--rit-dark">
+                                                        <div className="item">
+                                                            <font>Payment method</font>
+                                                        </div>
+                                                        <div className="value">
+                                                            <font>IDEAL</font>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
