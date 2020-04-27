@@ -1,0 +1,605 @@
+.checkout-holder {
+    display: flex;
+    padding: 22px 0 40px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.checkout-holder .inner-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.checkout-holder .inner-wrapper-small {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-holder .checkout-layout-left {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.checkout-layout-left .back-button-wrapper {
+    width: 100%;
+    margin: -7px auto 15px;
+    max-width: 620px;
+    text-align: left;
+}
+
+.checkout-layout-left .checkout-step-buttons-holder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 53px;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.checkout-step-buttons-holder .checkout-steps-buttons-list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 280px;
+}
+
+.checkout-step-buttons-holder .checkout-steps-buttons-list::before {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
+    content: '';
+    display: inline-block;
+    height: 30px;
+    left: 34px;
+    position: absolute;
+    right: 34px;
+    top: 0;
+}
+
+.checkout-steps-buttons-list .checkout-step-btn {
+    position: relative;
+    width: 80px;
+}
+
+.checkout-steps-buttons-list .background-line {
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    height: 30px;
+    left: -11px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.checkout-steps-buttons-list .checkout-step-btn:first-child .background-line {
+    left: 34px;
+}
+
+.checkout-steps-buttons-list .disabled .background-line {
+    display: none;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.checkout-steps-buttons-list .circle {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: #626262;
+    display: inline-block;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    height: 30px;
+    line-height: 32px;
+    margin-bottom: 8px;
+    position: relative;
+    width: 30px;
+    z-index: 2;
+}
+
+.checkout-steps-buttons-list .text {
+    color: #626262;
+    display: block;
+    font-size: 11px;
+    letter-spacing: .5px;
+    line-height: 14px;
+    font-family: "Roboto";
+}
+
+.checkout-steps-buttons-list .selected .text {
+    color: #865;
+    font-weight: 700;
+}
+
+.checkout-steps-buttons-list .selected .background-line {
+    right: 40px;
+}
+
+.checkout-steps-buttons-list .checkout-step-btn:not(.selected):not(.disabled) .circle {
+    background-color: #fff;
+    font-size: 0;
+}
+
+.checkout-steps-buttons-list .selected .circle {
+    background-color: #9a7b69;
+    color: #fff;
+    font-size: 18px;
+    pointer-events: none;
+    position: relative;
+}
+
+.checkout-steps-buttons-list .selected .circle::before {
+    background-color: transparent;
+    border: 5px solid #9a7b69;
+    border-radius: 50%;
+    box-sizing: border-box;
+    content: '';
+    display: inline-block;
+    height: 34px;
+    left: -3px;
+    position: absolute;
+    top: -2px;
+    width: 34px;
+}
+
+.checkout-inner .checkout-step-content {
+    display: block;
+}
+
+.checkout-step-content .checkout-step-title {
+    margin-bottom: 52px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 29px;
+    line-height: 40px;
+    letter-spacing: 2.4px;
+}
+
+.checkout-step-title .number {
+    color: #fff;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 130px;
+    left: 50%;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -54%);
+}
+
+.checkout-step-title .text {
+    color: #1a1919;
+    display: block;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin: 0 auto;
+    max-width: 240px;
+    position: relative;
+    text-transform: none;
+}
+
+.checkout-step-content .checkout-review-box {
+    background-color: #fff;
+    color: #1a1919;
+    margin-bottom: 20px;
+    padding: 0 20px 1px;
+    text-align: left;
+    width: 100%;
+}
+
+.checkout-review-box .checkout-review-box-title {
+    border-bottom: 1px solid #d8d8d8;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 21px 0 19px;
+    text-transform: uppercase;
+}
+
+.checkout-review-box .chosen-delivery-option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.checkout-review-box .chosen-delivery-option .text {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    line-height: 24px;
+    max-width: calc(100% - 70px);
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.checkout-review-box .chosen-delivery-option .price {
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 15px;
+    letter-spacing: .5px;
+    line-height: 22px;
+    margin-left: auto;
+}
+
+.checkout-review-box .read-only-summary {
+    color: #1a1919;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 21px;
+    margin-bottom: 7px;
+}
+
+.checkout-review-box .read-only-summary span {
+    display: block;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.checkout-review-box .read-only-summary .name {
+    font-style: italic;
+}
+
+.checkout-review-box-footer {
+    display: flex;
+    margin: 0 0 17px;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.checkout-review-box button {
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    color: #865;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.checkout-review-box.review-billing-box .read-only-summary {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.checkout-review-box.review-billing-box .email {
+    margin-bottom: 24px;
+}
+
+.checkout-review-box.review-billing-box .checkout-review-box-footer {
+    margin: 17px 0;
+}
+
+.terms-and-conditions-info {
+    margin: 22px auto 30px;
+    max-width: 610px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.terms-and-conditions-info p, .terms-and-conditions-info a {
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    color: #453f3f;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: .4px;
+}
+
+.terms-and-conditions-info a {
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    color: #865;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-submit-checkout {
+    background-color: #1a1919;
+    border: 1px solid #1a1919;
+    color: #fff;
+    display: inline-block;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    min-width: 220px;
+    max-width: 280px;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-submit-checkout:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* right part design */
+
+.checkout-summary-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    background-color: white;
+}
+
+.checkout-summary-inner .section-header {
+    border-bottom: 1px solid #e8e8e8;
+    color: #1a1919;
+    display: flex;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    margin-bottom: 18px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.checkout-summary-inner .section-header a {
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    color: #865;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    margin-left: auto;
+}
+
+.checkout-summary-inner .checkout-summary-minicart {
+    margin-bottom: 23px;
+    width: 100%;
+}
+
+.checkout-summary-minicart .mini-cart-product {
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    margin-bottom: 0px;
+    padding: 0 0 25px 10px;
+    position: relative;
+    width: 100%;
+}
+
+.checkout-summary-minicart .mini-cart-image {
+    flex-shrink: 0;
+    padding-top: 4px;
+    width: 60px;
+}
+
+.mini-cart-image img {
+    max-width: 100%;
+}
+
+.checkout-summary-minicart .mini-cart-info {
+    padding-left: 10px;
+    width: 100%;
+}
+
+.checkout-summary-minicart .mini-cart-small-title {
+    color: #865;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 12px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.checkout-summary-minicart .mini-cart-name {
+    line-height: 22px;
+    padding-right: 90px;
+    color: #1a1919;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 15px;
+    letter-spacing: .5px;
+    line-height: 22px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkout-summary-minicart .mini-cart-details-bottom {
+    padding: 7px 90px 0 0;
+}
+
+.checkout-summary-minicart .mini-cart-pricing {
+    color: #767676;
+    font-size: 12px;
+    letter-spacing: .4px;
+    line-height: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.checkout-summary-minicart .mini-cart-price-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .2s cubic-bezier(.645, .045, .355, 1);
+    text-align: right;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    padding-top: 17px;
+}
+
+.checkout-summary-minicart .mini-cart-price {
+    color: #1a1919;
+    display: block;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 15px;
+    letter-spacing: .5px;
+    line-height: 22px;
+}
+
+.checkout-summary-order-totals {
+    width: 100%;
+}
+
+.checkout-summary-order-totals .order-totals-table {
+    width: 100%;
+}
+
+.checkout-summary-order-totals .order-subtotal {
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 21px;
+    padding-bottom: 25px;
+    width: 100%;
+    display: flex;
+}
+
+.checkout-summary-order-totals .cfin {
+    color: #1a1919;
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 16px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+
+.checkout-summary-order-totals .cfiv {
+    color: #1a1919;
+    flex-shrink: 0;
+    font-family: "ClassGarmnd BT", "Times New Roman", serif;
+    font-size: 15px;
+    letter-spacing: .5px;
+    line-height: 22px;
+    margin-left: auto;
+}
+
+.checkout-summary-order-totals .checkout-summary-price-row {
+    display: flex;
+    margin-bottom: 11px;
+}
+
+.checkout-summary-order-totals .order-total {
+    border-top: 1px solid #453f3f;
+    font-weight: 700;
+    margin-top: 18px;
+    padding-top: 26px;
+    display: flex;
+}
+
+.checkout-summary-order-totals .cart-footer-total {
+    display: flex;
+    width: 100%;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .checkout-holder {
+        padding: 60px 0px;
+    }
+    .checkout-holder .inner-wrapper-small {
+        flex-direction: row;
+    }
+    .checkout-holder .checkout-layout-left {
+        width: calc(100% - 320px);
+        padding-right: 22px;
+        margin-bottom: 50px;
+    }
+    .checkout-holder .checkout-layout-right {
+        width: 100%;
+        max-width: 320px;
+    }
+    .checkout-layout-left .back-button-wrapper {
+        margin: -24px auto 35px;
+    }
+    .checkout-layout-left .checkout-step-buttons-holder {
+        margin: 4px 0 60px;
+    }
+    .checkout-step-buttons-holder .checkout-steps-buttons-list {
+        width: 470px;
+    }
+    .checkout-step-buttons-holder .checkout-steps-buttons-list::before {
+        left: 55px;
+        right: 55px;
+    }
+    .checkout-steps-buttons-list .checkout-step-btn {
+        width: 120px;
+    }
+    .checkout-steps-buttons-list .background-line {
+        left: -1px;
+    }
+    .checkout-steps-buttons-list .checkout-step-btn:first-child .background-line {
+        left: 60px;
+    }
+    .checkout-steps-buttons-list .selected .background-line {
+        right: 54px;
+    }
+    .checkout-steps-buttons-list .selected .circle::before {
+        height: 36px;
+        width: 36px;
+    }
+    .checkout-step-content .checkout-step-title {
+        margin-bottom: 62px;
+    }
+    .checkout-step-title .number {
+        font-size: 160px;
+        transform: translate(-50%, -55%);
+    }
+    .checkout-step-title .text {
+        font-size: 30px;
+        letter-spacing: .6px;
+        line-height: 40px;
+        max-width: 350px;
+    }
+    .checkout-step-content .checkout-review-box {
+        margin: 0 auto 20px;
+        max-width: 610px;
+    }
+    .checkout-review-box .checkout-review-box-title {
+        margin-bottom: 22px;
+    }
+    .checkout-review-box .chosen-delivery-option {
+        margin-bottom: 7px;
+    }
+    .terms-and-conditions-info p, .terms-and-conditions-info a {
+        font-size: 13.5px;
+        line-height: 24px;
+        letter-spacing: .5px;
+    }
+    .btn-submit-checkout {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .checkout-holder .checkout-layout-left {
+        width: calc(100% - 360px);
+    }
+    .checkout-holder .checkout-layout-right {
+        max-width: 360px;
+    }
+}

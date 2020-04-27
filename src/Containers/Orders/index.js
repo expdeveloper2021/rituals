@@ -70,8 +70,8 @@ export class Orders extends Component {
                                 </div>
                                 <div className="orders-container">
                                     {this.state.arr.length > 0 ? <div className="all-orders-list">
-                                        <div className="order-block" onClick={() => this.setState({ modal: !this.state.modal })}>
-                                            <div className="order-block-inner">
+                                        <div className="order-block">
+                                            <div className="order-block-inner" onClick={() => this.setState({ modal: !this.state.modal })}>
                                                 <div className="order-image">
                                                     <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dwae1a38a8/images/zoom/1104565_TheRitualofSakuraMinifragrancesticksBOXPRO.png?sw=130&sh=130&sm=fit&q=100" />
                                                 </div>
@@ -98,7 +98,7 @@ export class Orders extends Component {
                                                 </div>
                                                 <div className="order-arrow">
                                                     <span>
-                                                        <ExpandMoreIcon style={{ fontSize: 42 }} />
+                                                        <ExpandMoreIcon style={{ fontSize: 30 }} />
                                                     </span>
                                                 </div>
                                             </div>

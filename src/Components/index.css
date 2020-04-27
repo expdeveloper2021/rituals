@@ -358,6 +358,56 @@
     color: #999;
 }
 
+/* Navbar Header */
+
+.navCheck {
+    height: 40px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 981;
+    background-color: #1a1919;
+}
+
+.navresponsive {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navresponsive .header-empty--secure-checkout {
+    color: #fff;
+    float: left;
+    letter-spacing: 1px;
+    margin: 10px;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.header-empty--secure-checkout .icon-secure {
+    display: inline-block;
+    font-size: 16px;
+    margin: -4px 6px 0 0;
+    vertical-align: middle;
+}
+
+.navresponsive .header-empty--logo {
+    right: 16px;
+    position: absolute;
+    top: 2px;
+    width: 84px;
+    height: 35px;
+}
+
+.navresponsive .cs-number--top {
+    display: none;
+}
+
+/* Media Queries */
+
 @media (max-width: 817px) {
     .menu-sidebar {
         display: none;
@@ -388,6 +438,12 @@
     .nav-inner-subnav {
         padding: 70px 0px 0px 20px;
     }
+    .navresponsive {
+        padding: 0 40px 0 54px;
+    }
+    .navresponsive .header-empty--logo {
+        left: 50%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -401,6 +457,38 @@
         position: absolute;
         right: 10px;
         top: 45px;
+    }
+    .navCheck {
+        height: 70px;
+    }
+    .navresponsive .header-empty--secure-checkout {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 1.14px;
+        margin: 26px 0 0 0;
+    }
+    .header-empty--secure-checkout .icon-secure {
+        margin-right: 10px;
+    }
+    .navresponsive .header-empty--logo {
+        display: block;
+        left: 44%;
+        top: 17px;
+        transform: translateX(-50%);
+    }
+    .navresponsive .cs-number--top {
+        display: block;
+    }
+    .navresponsive .cs-number--top a {
+        color: #fff;
+        float: right;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 14px;
+        margin: 31px 0 0;
+        text-decoration: none;
+        font-family: ScalaSansOT, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+        cursor: pointer;
     }
 }
 

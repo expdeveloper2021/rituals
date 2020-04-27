@@ -12,6 +12,7 @@ import CollectionStoryJing from '../Containers/CollectionStoryJing'
 import Orders from '../Containers/Orders'
 import Addresses from '../Containers/Addresses'
 import Newsletter from '../Containers/Newsletter'
+import Checkout from '../Containers/Checkout'
 
 const CreateBrowserHistory = require("history").createBrowserHistory
 const history = CreateBrowserHistory()
@@ -32,6 +33,7 @@ export class Routes extends Component {
                 <Route path="/order-history" component={Orders} />
                 <Route path="/address-list" component={Addresses} />
                 <Route path="/newsletter-subscription" component={Newsletter} />
+                <Route path="/checkout" component={Checkout} />
             </Router>
         )
     }
