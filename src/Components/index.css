@@ -492,14 +492,20 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1700px) {
     .menu-sidebar {
-        width: 700px;
+        width: 530px;
         display: flex;
         justify-content: flex-end;
     }
     .nav-desktop-inner-menu {
         width: 600px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .menu-sidebar {
+        width: 700px;
     }
 }
 
