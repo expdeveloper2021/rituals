@@ -18,7 +18,7 @@ export class EditProfile extends Component {
             firstName: "Maurice",
             lastName: "Reijersen",
             dob: "15/02/1981",
-            password: "asdfgha",
+            password: "",
             passwordType: true,
         }
     }
@@ -115,7 +115,7 @@ export class EditProfile extends Component {
                                                         <div className="field-wrapper">
                                                             <label>Password</label>
                                                             <label>Use 8-20 characters. That's the only rule for a password.</label>
-                                                            <input type={this.state.passwordType ? "password" : "text"} value={this.state.dob} onChange={(e) => this.setState({ dob: e.target.value })} />
+                                                            <input type={this.state.passwordType ? "password" : "text"} value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
                                                             <button className="password-reveal" onClick={() => this.setState({ passwordType: !this.state.passwordType })}>
                                                                 {this.state.passwordType ? <VisibilityOffIcon style={{ fontSize: 20 }} /> : <VisibilityIcon style={{ fontSize: 20 }} />}
                                                             </button>
