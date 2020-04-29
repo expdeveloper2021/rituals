@@ -16,6 +16,7 @@ import Checkout from '../Containers/Checkout'
 import Payment from '../Containers/Payment'
 import Login from '../Containers/Login'
 import Delivery from '../Containers/Delivery'
+import OrderConfirmation from '../Containers/Confirmation'
 
 const CreateBrowserHistory = require("history").createBrowserHistory
 const history = CreateBrowserHistory()
@@ -40,6 +41,7 @@ export class Routes extends Component {
                 <Route path="/payment" component={Payment} />
                 <Route path="/login" component={Login} />
                 <Route path="/delivery" component={Delivery} />
+                <Route path="/order-confirmation" component={OrderConfirmation} />
             </Router>
         )
     }

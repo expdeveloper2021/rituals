@@ -1,0 +1,118 @@
+.confirmation-main .checkout-summary-inner h4 {
+    line-height: 34px;
+    text-align: center;
+    color: #1a1919;
+    /* letter-spacing: .3px; */
+}
+
+.confirmation-main .checkout-summary-inner img {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.oc-content {
+    padding-bottom: 50px;
+}
+
+.confirmation-main .checkout-steps-buttons-list .circle {
+    line-height: 26px;
+}
+
+.confirmation-main .checkout-step-buttons-holder .checkout-steps-buttons-list::before {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.confirmation-main .checkout-step-btn::after {
+    content: '...';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-75%);
+    font-size: 50px;
+    color: #ccc;
+}
+
+.confirmation-main .checkout-step-btn:last-child::after {
+    content: '';
+}
+
+.confirmation-main .checkout-steps-buttons-list .disabled .circle {
+    background-color: transparent;
+    box-shadow: none !important;
+}
+
+.confirmation-main .checkout-steps-buttons-list .disabled .circle::before {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    content: '';
+    display: inline-block;
+    height: 34px;
+    left: -2px;
+    position: absolute;
+    top: -2px;
+    width: 34px;
+}
+
+.oc-content {
+    font-family: "Roboto";
+    color: #453f3f;
+    letter-spacing: .6px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.oc-content .bb-font {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.confirmation-main .btn-submit-checkout {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.confirmation-main .btn-submit-checkout:hover {
+    border: 1px solid black;
+}
+
+@media (min-width: 768px) {
+    .confirmation-main .checkout-step-title .text {
+        max-width: 200px;
+        letter-spacing: 2px;
+    }
+    .confirmation-main .checkout-step-buttons-holder .checkout-steps-buttons-list {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .confirmation-main.checkout-holder .checkout-layout-left {
+        width: calc(100% - 560px) !important;
+        margin-right: 40px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .confirmation-main.checkout-holder .inner-wrapper-small {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .confirmation-main .checkout-step-btn::after {
+        right: -30px;
+    }
+    .oc-content .bb-font {
+        padding: 5px;
+    }
+    .confirmation-main .inner-wrapper {
+        padding: 10px;
+    }
+}
