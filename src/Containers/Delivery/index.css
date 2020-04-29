@@ -1,0 +1,53 @@
+.date-of-delivery {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.delivery-main .addresslist-fieldset-inner {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.delivery-main .newsletter-content {
+    margin: 0px;
+    padding: 0px;
+}
+
+.delivery-main .read-only-summary {
+    color: #1a1919;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    padding-top: 21px;
+    margin-bottom: 7px;
+    font-family: "Roboto";
+    width: 100%;
+}
+
+.read-only-summary span {
+    display: block;
+}
+
+.read-only-summary .name {
+    font-style: italic;
+}
+
+.delivery-main .newsletter-content .signup-label:first-child {
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .two-inline {
+        width: calc(50% - 6px) !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .delivery-main .checkout-layout-left {
+        margin-right: 80px;
+    }
+}

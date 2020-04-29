@@ -15,6 +15,7 @@ import Newsletter from '../Containers/Newsletter'
 import Checkout from '../Containers/Checkout'
 import Payment from '../Containers/Payment'
 import Login from '../Containers/Login'
+import Delivery from '../Containers/Delivery'
 
 const CreateBrowserHistory = require("history").createBrowserHistory
 const history = CreateBrowserHistory()
@@ -38,6 +39,7 @@ export class Routes extends Component {
                 <Route path="/checkout" component={Checkout} />
                 <Route path="/payment" component={Payment} />
                 <Route path="/login" component={Login} />
+                <Route path="/delivery" component={Delivery} />
             </Router>
         )
     }
