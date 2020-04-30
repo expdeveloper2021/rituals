@@ -83,10 +83,10 @@ export class Home extends Component {
                         }}>
                         <div className="inner-wrapper" style={{ zIndex: 100 }}>
                             <div className="inner-intended">
-                                <div className="ico-logorh d-none d-md-block">
-                                </div>
-                                <h1 className="heading-bhf txt-white" >Een paasverrassing</h1>
-                                <p className="txt-white">Deel een luxueus cadeau, speels verpakt als een paasei</p>
+                                {/* <div className="ico-logorh d-none d-md-block">
+                                </div> */}
+                                <h1 className="heading-bhf txt-white" >Een verassing</h1>
+                                <p className="txt-white">Met onze cadeauverpakking maak je iedereen blij!</p>
                                 <button>VUL JE MAND</button>
                             </div>
                         </div>

@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import Navbar from '../../Components/Navbar'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import './index.css'
+import FilterListIcon from '@material-ui/icons/FilterList';
+import RemoveIcon from '@material-ui/icons/Remove';
+import CloseIcon from '@material-ui/icons/Close';
+import AddIcon from '@material-ui/icons/Add';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import './index.css'
 
 AOS.init();
 
@@ -13,6 +17,10 @@ export class CollectionStoryJing extends Component {
         super()
         this.state = {
             transition: false,
+            modal: false,
+            firstBlock: false,
+            secondBlock: true,
+            thirdBlock: false,
         }
     }
 
@@ -199,12 +207,15 @@ export class CollectionStoryJing extends Component {
                                         RELAX
                                     </a>
                                 </li>
+                                <button className="filter-btn" onClick={() => this.setState({ modal: true })} >
+                                    <FilterListIcon style={{ fontSize: 30, color: "white" }} />
+                                </button>
                             </ul>
                         </div>
                         <div className="inner-wrapper">
                             <div className="grid-placeholder">
                                 <div className="grid-wrap">
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                         </div>
@@ -216,7 +227,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dwf847af0d/images/grid/1107134_TheRitualofJingFragranceSticksPROBOXgrid.png?sw=201&q=100" />
                                         </div>
@@ -228,7 +239,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw23454599/images/grid/1106885_TheRitualofJingSleepBathCrystalsPROgrid.png?sw=151&q=100" />
                                         </div>
@@ -240,7 +251,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                         </div>
@@ -252,7 +263,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                         </div>
@@ -264,7 +275,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw25a54d55/images/grid/1106876_TheRitualofJingBodyCream220mlPROgrid.png?sw=226&q=100" />
                                         </div>
@@ -276,7 +287,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                         </div>
@@ -288,7 +299,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dwf847af0d/images/grid/1107134_TheRitualofJingFragranceSticksPROBOXgrid.png?sw=201&q=100" />
                                         </div>
@@ -300,7 +311,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw23454599/images/grid/1106885_TheRitualofJingSleepBathCrystalsPROgrid.png?sw=151&q=100" />
                                         </div>
@@ -312,7 +323,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                         </div>
@@ -324,7 +335,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw39fd45f8/images/grid/1106468_TheRitualofSakuraZensationalFoamingShowerGelPRO1grid.png?sw=100&q=100" />
                                         </div>
@@ -336,7 +347,7 @@ export class CollectionStoryJing extends Component {
                                             <button>IN WINKELMAND</button>
                                         </div>
                                     </div>
-                                    <div className="item"  data-aos="fade-in">
+                                    <div className="item" data-aos="fade-in">
                                         <div className="card-bimage">
                                             <img src="https://www.rituals.com/dw/image/v2/BBKL_PRD/on/demandware.static/-/Sites-rituals-products/default/dw25a54d55/images/grid/1106876_TheRitualofJingBodyCream220mlPROgrid.png?sw=226&q=100" />
                                         </div>
@@ -353,6 +364,137 @@ export class CollectionStoryJing extends Component {
                         </div>
                     </div>
                 </section>
+                <div className={`filter-flyin ${this.state.modal && "refinements-visible"}`}>
+                    <div className="filter-overlay">
+
+                    </div>
+                    <div className="filter-inner">
+                        <div className="filter-header">
+                            <button className="filter-x-close" onClick={() => this.setState({ modal: false })}>
+                                <CloseIcon />
+                            </button>
+                            <h3>Filter</h3>
+                        </div>
+                        <div className="filter-holder">
+                            <div className="filters-container">
+                                <div className="filter-block">
+                                    <button className="filter-block-title">
+                                        SHOP BY COLLECTION
+                                        <span className="icon-expanding" onClick={() => this.setState({ firstBlock: !this.state.firstBlock })}>
+                                            {!this.state.firstBlock ? <AddIcon style={{ fontSize: 28, color: "#453f3f" }} /> : <RemoveIcon style={{ fontSize: 28, color: "#453f3f" }} />}
+                                        </span>
+                                    </button>
+                                    {this.state.firstBlock && <div className="filter-options">
+                                        <div className="filter-option-title">
+
+                                        </div>
+                                        <div className="filter-options-container">
+                                            <div className="filter-item">
+                                                <label>
+                                                    <input type="checkbox" />
+                                                    <span className="text jing-bg-full-color">
+                                                        <font>Jing</font>
+                                                        <sup>2</sup>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div className="filter-item">
+                                                <label>
+                                                    <input type="checkbox" />
+                                                    <span className="text amsterdamcollection-bg-full-color">
+                                                        <font>Amsterdam Collection</font>
+                                                        <sup>1</sup>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div className="filter-item">
+                                                <label>
+                                                    <input type="checkbox" />
+                                                    <span className="text sakura-bg-full-color">
+                                                        <font>Sakura</font>
+                                                        <sup>4</sup>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div className="filter-item">
+                                                <label>
+                                                    <input type="checkbox" />
+                                                    <span className="text samurai-bg-full-color">
+                                                        <font>Samurai</font>
+                                                        <sup>6</sup>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>}
+                                </div>
+                                <div className="filter-block">
+                                    <button className="filter-block-title">
+                                        SHOP BY PRODUCT
+                                        <span className="icon-expanding" onClick={() => this.setState({ secondBlock: !this.state.secondBlock })}>
+                                            {!this.state.secondBlock ? <AddIcon style={{ fontSize: 28, color: "#453f3f" }} /> : <RemoveIcon style={{ fontSize: 28, color: "#453f3f" }} />}
+                                        </span>
+                                    </button>
+                                    {this.state.secondBlock && <div className="filter-options">
+                                        <div className="filter-option-title">
+
+                                        </div>
+                                        <div className="filter-options-container">
+                                            <div className="filter-item">
+                                                <label>
+                                                    <input type="checkbox" />
+                                                    <span className="text jing-bg-full-color">
+                                                        <font>Gift Sets M</font>
+                                                        <sup>1</sup>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div className="filter-item">
+                                                <label>
+                                                    <input type="checkbox" />
+                                                    <span className="text">
+                                                        <font>Gift Sets M</font>
+                                                        <sup>1</sup>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>}
+                                </div>
+                                <div className="filter-block">
+                                    <button className="filter-block-title">
+                                        PRICE RANGE
+                                        <span className="icon-expanding" onClick={() => this.setState({ thirdBlock: !this.state.thirdBlock })}>
+                                            {!this.state.thirdBlock ? <AddIcon style={{ fontSize: 28, color: "#453f3f" }} /> : <RemoveIcon style={{ fontSize: 28, color: "#453f3f" }} />}
+                                        </span>
+                                    </button>
+                                    {this.state.thirdBlock && <div className="filter-options">
+                                        <div className="filter-option-title">
+
+                                        </div>
+                                        <div className="price-holder">
+                                            <div className="price-item-input">
+                                                <label>€</label>
+                                                <input />
+                                            </div>
+                                            <div className="price-item-input">
+                                                <label>until</label>
+                                                <input />
+                                            </div>
+                                            <div className="price-item-btn">
+                                                <button>GO</button>
+                                            </div>
+                                        </div>
+                                    </div>}
+                                </div>
+                                <div className="filter-user-actions">
+                                    <button className="btn-clear-all">TO CLEAR</button>
+                                    <button className="btn-apply-all">TO APPLY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
