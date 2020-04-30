@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import SlowMotionVideoIcon from '@material-ui/icons/SlowMotionVideo';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import './index.css'
@@ -13,7 +15,9 @@ export class Home extends Component {
         super()
         this.state = {
             transition: false,
-            arr: ["1", "2", "3", "4", "5", "6"]
+            arr: ["1", "2", "3", "4", "5", "6"],
+            right: false,
+            rightSecond: false,
         }
     }
 
@@ -24,6 +28,46 @@ export class Home extends Component {
         setTimeout(() => {
             this.setState({ transition: false })
         }, 300);
+    }
+
+    slideLeft(e) {
+        if (e === "first") {
+            let element = document.getElementById("first-slider")
+            element.scrollLeft += 200
+            if (element.scrollLeft > -100) {
+                this.setState({ right: true })
+            } else {
+                this.setState({ right: false })
+            }
+        } else {
+            let element = document.getElementById("second-slider")
+            element.scrollLeft += 200
+            if (element.scrollLeft > -100) {
+                this.setState({ rightSecond: true })
+            } else {
+                this.setState({ rightSecond: false })
+            }
+        }
+    }
+
+    slideRight(e) {
+        if (e === "first") {
+            let element = document.getElementById("first-slider")
+            element.scrollLeft -= 200
+            if (element.scrollLeft > 250) {
+                this.setState({ right: true })
+            } else {
+                this.setState({ right: false })
+            }
+        } else {
+            let element = document.getElementById("second-slider")
+            element.scrollLeft -= 200
+            if (element.scrollLeft > 250) {
+                this.setState({ rightSecond: true })
+            } else {
+                this.setState({ rightSecond: false })
+            }
+        }
     }
 
     render() {
@@ -80,7 +124,7 @@ export class Home extends Component {
                     </div>
                 </div>
                 <div className="third-sec-main">
-                    <div className="slider-products">
+                    <div className="slider-products" id="first-slider">
                         <div className="sp-card hiddenMob">
                             <h2>Favorieten in spe</h2>
                             <h3>Nieuw binnen</h3>
@@ -98,6 +142,14 @@ export class Home extends Component {
                                 </div>
                             </div>
                         })}
+                    </div>
+                    <div className="slider-actions">
+                        <button className={`slider-button ${!this.state.right && "hidden"}`} onClick={this.slideRight.bind(this, "first")}>
+                            <ChevronLeftIcon style={{ fontSize: 44 }} />
+                        </button>
+                        <button className="slider-button" onClick={this.slideLeft.bind(this, "first")}>
+                            <ChevronRightIcon style={{ fontSize: 44 }} />
+                        </button>
                     </div>
                 </div>
                 <div className="card-sec-rit">
@@ -127,7 +179,7 @@ export class Home extends Component {
                     </div>
                 </div>
                 <div className="third-sec-main">
-                    <div className="slider-products">
+                    <div className="slider-products" id="second-slider">
                         <div className="sp-card hiddenMob">
                             <h2>Favorieten in spe</h2>
                             <h3>Nieuw binnen</h3>
@@ -145,6 +197,14 @@ export class Home extends Component {
                                 </div>
                             </div>
                         })}
+                    </div>
+                    <div className="slider-actions">
+                        <button className={`slider-button ${!this.state.rightSecond && "hidden"}`} onClick={this.slideRight.bind(this)}>
+                            <ChevronLeftIcon style={{ fontSize: 44 }} />
+                        </button>
+                        <button className="slider-button" onClick={this.slideLeft.bind(this)}>
+                            <ChevronRightIcon style={{ fontSize: 44 }} />
+                        </button>
                     </div>
                 </div>
                 <div className="card-sec-rit">

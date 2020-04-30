@@ -173,6 +173,7 @@
     display: flex;
     flex-wrap: nowrap;
     margin-top: 10px;
+    scroll-behavior: smooth;
 }
 
 .slider-products::-webkit-scrollbar {
@@ -185,6 +186,54 @@
     background: black;
     border-radius: 12px;
 }
+
+.slider-actions {
+    display: none;
+}
+
+.slider-button {
+    align-items: center;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    font-size: 44px;
+    height: 50px;
+    justify-content: center;
+    transition: background .4s cubic-bezier(.05, .5, .3, 1);
+    width: 50px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    outline: none !important;
+}
+
+.slider-button:hover {
+    background-color: white;
+}
+
+.slider-actions button {
+    opacity: 1;
+    position: absolute;
+    transform: translateY(-500%);
+    transition: opacity .6s cubic-bezier(.05, .5, .3, 1);
+    z-index: 1;
+}
+
+.slider-actions button.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.slider-actions button:first-child {
+    left: 60px;
+}
+
+.slider-actions button:last-child:not(:only-child) {
+    right: 60px;
+}
+
+/* Cards */
 
 .sp-card {
     margin: 10px 0px;
@@ -347,6 +396,9 @@
         line-height: 26px;
         font-size: 13px;
         letter-spacing: 2px;
+    }
+    .slider-actions {
+        display: block;
     }
 }
 
