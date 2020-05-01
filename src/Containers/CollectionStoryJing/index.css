@@ -979,4 +979,16 @@
     .magazine-tile:not(:last-of-type) {
         margin-bottom: 37px;
     }
+    .filter-btn {
+        right: 10px;
+    }
+    .grid-wrap {
+        height: auto;
+        align-items: center;
+    }
+    .grid-wrap .item {
+        width: 80%;
+        margin: 5px;
+        padding: 9px;
+    }
 }

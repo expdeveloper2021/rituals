@@ -424,6 +424,10 @@
         display: flex;
         justify-content: center;
     }
+    .img-lah img {
+        width: 100%;
+        max-height: 300px;
+    }
 }
 
 @media (max-width: 767px) {
