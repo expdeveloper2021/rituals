@@ -17,6 +17,7 @@ import Payment from '../Containers/Payment'
 import Login from '../Containers/Login'
 import Delivery from '../Containers/Delivery'
 import OrderConfirmation from '../Containers/Confirmation'
+import Footer from '../Components/Footer'
 
 const CreateBrowserHistory = require("history").createBrowserHistory
 const history = CreateBrowserHistory()
@@ -24,25 +25,28 @@ const history = CreateBrowserHistory()
 export class Routes extends Component {
     render() {
         return (
-            <Router history={history}>
-                <Route exact path="/" component={Home} />
-                <Route path="/bath-body" component={BathBody} />
-                <Route path="/collection-story" component={CollectionStory} />
-                <Route path="/cart" component={Cart} />
-                <Route path="/account" component={Account} />
-                <Route path="/account-edit-profile" component={EditProfile} />
-                <Route path="/product-detail" component={ProductDetail} />
-                <Route path="/duplicate-home" component={HomeDuplicate} />
-                <Route path="/collection-story-jing" component={CollectionStoryJing} />
-                <Route path="/order-history" component={Orders} />
-                <Route path="/address-list" component={Addresses} />
-                <Route path="/newsletter-subscription" component={Newsletter} />
-                <Route path="/checkout" component={Checkout} />
-                <Route path="/payment" component={Payment} />
-                <Route path="/login" component={Login} />
-                <Route path="/delivery" component={Delivery} />
-                <Route path="/order-confirmation" component={OrderConfirmation} />
-            </Router>
+            <div>
+                <Router history={history}>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/bath-body" component={BathBody} />
+                    <Route path="/collection-story" component={CollectionStory} />
+                    <Route path="/cart" component={Cart} />
+                    <Route path="/account" component={Account} />
+                    <Route path="/account-edit-profile" component={EditProfile} />
+                    <Route path="/product-detail" component={ProductDetail} />
+                    <Route path="/duplicate-home" component={HomeDuplicate} />
+                    <Route path="/collection-story-jing" component={CollectionStoryJing} />
+                    <Route path="/order-history" component={Orders} />
+                    <Route path="/address-list" component={Addresses} />
+                    <Route path="/newsletter-subscription" component={Newsletter} />
+                    <Route path="/checkout" component={Checkout} />
+                    <Route path="/payment" component={Payment} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/delivery" component={Delivery} />
+                    <Route path="/order-confirmation" component={OrderConfirmation} />
+                </Router>
+                <Footer />
+            </div>
         )
     }
 }
