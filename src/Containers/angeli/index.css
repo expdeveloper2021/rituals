@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+.adi-main {
+    width: 100%;
+    height: 100%;
+}
+
+.first-sec-adi {
+    background-image: linear-gradient(90deg, #F0EDEE 65%, #F9F6F5 0%);
+    padding: 0px;
+    position: relative;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-fsa, .content-fsa {
+    float: left;
+    position: relative;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-fsa {
+    background-image: linear-gradient(30deg, rgba(222, 213, 216, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%), url(http://www.zonjee-juwelier.nl/wp-content/uploads/2019/06/1.jpg);
+    background-position: top left !important;
+}
+
+.id-fsa {
+    height: 20vw;
+    -webkit-animation-duration: .2s;
+    -moz-animation-duration: .2s;
+    -o-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    margin-bottom: 0px;
+    box-sizing: content-box;
+}
+
+.content-fsa {
+    padding-top: 10vw !important;
+    padding-bottom: 10vw !important;
+}
+
+.text-cfsa {
+    line-height: 2em;
+    margin-right: 10vw !important;
+    margin-left: -20vw !important;
+    position: relative;
+    color: black;
+    text-align: right;
+}
+
+.tfsa-inner h5 {
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #0c0c0c !important;
+    letter-spacing: 10px;
+    line-height: 1.4em;
+}
+
+.tfsa-inner p {
+    line-height: 2em;
+    padding-bottom: 1em;
+}
+
+.tfsa-inner h6 {
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #0c0c0c !important;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+
+/* Second section */
+
+.second-sec-adi {
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+}
+
+.ssa-inner {
+    max-width: 1080px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.image-ssa {
+    background-color: #f9f6f5;
+    padding-right: 8%;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* float: left; */
+    position: relative;
+    z-index: 2;
+}
+
+.image-ssa img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-ssa {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+.text-cssa {
+    text-align: left;
+    -webkit-animation-duration: .2s;
+    -moz-animation-duration: .2s;
+    -o-animation-duration: .2s;
+    animation-duration: .2s;
+    line-height: 2em;
+}
+
+.text-cssa h2 {
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-size: 30px !important;
+    color: #444444 !important;
+}
+
+.text-cssa p {
+    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 300;
+    color: #585858;
+    letter-spacing: 0.2px;
+
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .first-sec-adi {
+        display: flex;
+    }
+    .image-fsa, .content-fsa {
+        order: 1;
+        width: 47.25%;
+        margin-right: 5.5%;
+    }
+    .first-sec-adi .content-fsa {
+        margin-right: 0px;
+    }
+    .second-sec-adi, .ssa-inner {
+        padding: 2% 0px;
+        display: flex;
+    }
+    .image-ssa {
+        margin-right: 5.5%;
+        width: 47.25%;
+    }
+    .content-ssa {
+        width: 47.25%;
+    }
+}
