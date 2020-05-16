@@ -42,6 +42,21 @@
     box-sizing: content-box;
 }
 
+.mobile-id-fsa span {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+}
+
+.mobile-id-fsa span img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile-id-fsa {
+    display: none;
+}
+
 .content-fsa {
     padding-top: 10vw !important;
     padding-bottom: 10vw !important;
@@ -109,7 +124,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* float: left; */
     position: relative;
     z-index: 2;
 }
@@ -411,5 +425,28 @@
     }
     .text-inner-hts h2 {
         font-size: 30px;
+    }
+    .image-fsa {
+        width: 100%;
+    }
+    .mobile-id-fsa {
+        display: inline-block;
+    }
+    .id-fsa {
+        display: none;
+    }
+    .image-ssa {
+        float: left;
+    }
+    .content-fsa {
+        padding: 10vw 10%;
+        background-image: linear-gradient(90deg, #F0EDEE 65%, #F9F6F5 0%);
+    }
+    .text-cfsa {
+        margin: 0px !important;
+        margin-top: 30px !important;
+    }
+    .tfsa-inner h5 {
+        font-size: 18px;
     }
 }

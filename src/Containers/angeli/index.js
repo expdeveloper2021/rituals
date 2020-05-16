@@ -13,6 +13,11 @@ export class Angeli extends Component {
                             <div className="id-fsa">
 
                             </div>
+                            <div className="mobile-id-fsa">
+                                <span>
+                                    <img src="http://www.zonjee-juwelier.nl/wp-content/uploads/2019/06/1.jpg" />
+                                </span>
+                            </div>
                         </div>
                         <div className="content-fsa">
                             <div className="text-cfsa">
@@ -21,7 +26,7 @@ export class Angeli extends Component {
                                         ANGELI DI BOSCA
                                     </h5>
                                     <p>&nbsp;</p>
-                                    <h6>EXALTED QUALITY, A CROWNING ACHIEVEMENT ON YOUR MARRIAGE.</h6>
+                                    <h6>Verheven kwaliteit, een bekroning op uw huwelijk.</h6>
                                     <h6>&nbsp;</h6>
                                     <p>&nbsp;</p>
                                 </div>
