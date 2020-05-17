@@ -26,7 +26,7 @@ export class Angeli extends Component {
                                         ANGELI DI BOSCA
                                     </h5>
                                     <p>&nbsp;</p>
-                                    <h6>Verheven kwaliteit, een bekroning op uw huwelijk.</h6>
+                                    <h6>EXALTED QUALITY, A CROWNING ACHIEVEMENT ON YOUR MARRIAGE.</h6>
                                     <h6>&nbsp;</h6>
                                     <p>&nbsp;</p>
                                 </div>
@@ -44,11 +44,11 @@ export class Angeli extends Component {
                                     <p>
                                         <font>The jewelery brand Angeli Di Bosca stands for quality and design that are visible in the beautiful collections and of course after</font>
                                         <br />
-                                        <font>the roots of the brand, namely PC Boschmans. The Boschmans house was founded in 1865 and stands for “A Passion for Perfection”.</font>
+                                        <font> the roots of the brand, namely PC Boschmans. The Boschmans house was founded in 1865 and stands for “A Passion for Perfection”.</font>
                                         <br />
-                                        <font>In 2005, the company took the ultimate step to perfection by</font>
+                                        <font> In 2005, the company took the ultimate step to perfection by</font>
                                         <br />
-                                        <font>designing and releasing its own collections under the Angeli Di Bosca house brand .</font>
+                                        <font> designing and releasing its own collections under the Angeli Di Bosca house brand .</font>
                                     </p>
                                 </div>
                             </div>
@@ -76,9 +76,9 @@ export class Angeli extends Component {
                                     <p>
                                         <font>The right to a decent existence and sustainability are the core values ​​of Angeli Di Bosca. The jewelery brand therefore guarantees that every ring with or without diamond is made free of conflict and child labor. It is an exclusive brand that stands for high quality and offers</font>
                                         <br />
-                                        <font>unique engagement and wedding rings. The rings are available with or without diamond in white, yellow or rose gold. Angeli Di Bosca makes</font>
+                                        <font> unique engagement and wedding rings. The rings are available with or without diamond in white, yellow or rose gold. Angeli Di Bosca makes</font>
                                         <br />
-                                        <font>everyone smile at one of the most beautiful moments of their lives.</font>
+                                        <font> everyone smile at one of the most beautiful moments of their lives.</font>
                                     </p>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@ export class Angeli extends Component {
                                     <p>
                                         <font>The moment of an engagement or marriage should be unforgettable, a new discovery of life and that is exactly what drives</font>
                                         <br />
-                                        <font>Angeli Di Bosca. The collections fuse exclusivity and class with a contemporary design and various designs for every budget.</font>
+                                        <font> Angeli Di Bosca. The collections fuse exclusivity and class with a contemporary design and various designs for every budget.</font>
                                     </p>
                                 </div>
                             </div>

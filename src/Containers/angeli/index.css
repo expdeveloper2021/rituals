@@ -155,8 +155,8 @@
     font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
     text-transform: uppercase;
     line-height: 1.5em;
-    font-size: 30px !important;
-    color: #444444 !important;
+    font-size: 30px;
+    color: #444444;
 }
 
 .text-cssa p {
@@ -418,17 +418,6 @@
 }
 
 @media (max-width: 767px) {
-    .content-inner-cft {
-        padding: 10px;
-        top: 0px;
-        margin: 0px;
-    }
-    .text-inner-hts h2 {
-        font-size: 30px;
-    }
-    .image-fsa {
-        width: 100%;
-    }
     .mobile-id-fsa {
         display: inline-block;
     }
@@ -437,6 +426,7 @@
     }
     .image-ssa {
         float: left;
+        margin-bottom: 30px;
     }
     .content-fsa {
         padding: 10vw 10%;
@@ -448,5 +438,48 @@
     }
     .tfsa-inner h5 {
         font-size: 18px;
+    }
+    .second-sec-adi, .third-sec-adi, .fourth-sec-adi {
+        float: left;
+        padding: 22px 0px;
+    }
+    .ssa-inner, .heading-tsa, .first-content-tsa, .content-fsad {
+        padding: 15px 0px;
+    }
+    .text-cssa h2 {
+        font-size: 24px;
+    }
+    .image-fcts {
+        margin-bottom: 30px;
+    }
+    .content-inner-cft {
+        padding: 20px;
+        top: 0px;
+        margin: 0px;
+        font-size: 15px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: -100px;
+    }
+    .text-inner-hts h2 {
+        font-size: 30px;
+    }
+    .image-fsa {
+        width: 100%;
+    }
+    .content-inner-cft h3 {
+        font-size: 20px;
+    }
+    .content-inner-cft br, .content-ssa br, .content-fcsct br {
+        display: none;
+    }
+    .first-content-sct, .ci-fsad {
+        margin-bottom: 30px;
+    }
+    .content-fcsct, .content-scsct {
+        padding: 20px !important;
+    }
+    .ci-fsad h3 {
+        font-size: 28px !important;
     }
 }
