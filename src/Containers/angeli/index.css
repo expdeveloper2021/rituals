@@ -452,6 +452,9 @@
     .image-fcts {
         margin-bottom: 30px;
     }
+    .content-fcts {
+        margin-bottom: 60px;
+    }
     .content-inner-cft {
         padding: 20px;
         top: 0px;
@@ -459,7 +462,7 @@
         font-size: 15px;
         margin-right: 20px;
         margin-left: 20px;
-        margin-top: -100px;
+        margin-top: -170px;
     }
     .text-inner-hts h2 {
         font-size: 30px;
@@ -481,5 +484,8 @@
     }
     .ci-fsad h3 {
         font-size: 28px !important;
+    }
+    html:not(.no-js) [data-aos=fade-left] {
+        transform: translate3d(0px, 100px, 0px) !important;
     }
 }
